@@ -1,0 +1,83 @@
+.createActivity {
+    display: flex;
+    padding: 1rem 1.25rem 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border-radius: 1.875rem;
+    color: #FAFAFA;
+    border: 0.125rem solid #0070AD;
+    background: #0070AD;
+    outline: none;
+    font-family: Ubuntu;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem; 
+    letter-spacing: 0.0156rem;
+    width: 16.3125rem;
+    height: 3rem;
+    &:hover{
+        border: 0.125rem solid #005C94;
+        background: #005C94;
+        outline: none;
+    }
+    &:focus{
+        border: 0.125rem solid #009CF1;
+        background: #0070AD;
+        outline: none;
+    }
+    &:active{
+        border: 0.125rem solid #003D61;
+        background: #003D61;
+        outline: none;
+    }
+}
+
+.noMatchingCreateActivity{
+    display: flex;
+    height: 2.5rem;
+    padding: 1rem 1.5rem 1rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+
+    border-radius: 1.875rem;
+    border: 2px solid #0070AD;
+
+    color: #0070AD;
+    font-family: Ubuntu;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.01563rem;
+
+    width: 100%;
+}
+
+.scenariosButton{
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    height:4.5rem;
+    span{
+        font-family: Ubuntu;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: 0.01563rem;
+        text-transform: uppercase;
+        align-items: center;
+        gap: 1.5rem;
+        align-self: stretch;
+    }
+}

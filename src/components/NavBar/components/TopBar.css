@@ -1,0 +1,49 @@
+.top-nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.125rem solid #ececec;
+  z-index: 2;
+}
+
+.top-nav a {
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.left-section {
+  display: flex;
+}
+
+.right-section {
+  margin-right: 3rem;
+  list-style: none;
+  padding: 0;
+  font-family: Ubuntu;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.016rem;
+  display: flex;
+}
+
+.iconMargin {
+  margin-right: 0.3rem;
+  margin-left: -0.5rem;
+}
+
+.avatarImg {
+  margin-right: 0rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+}
+
+.blankSpace {
+  margin-right: 2rem;
+}

@@ -1,0 +1,108 @@
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 2rem;
+  background-color: #f4f8fb;
+  font-family: 'Ubuntu', sans-serif;
+  div {
+    .titleofPage,
+    .titleOfCategory,
+    .nameOfCategory {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nameOfCategory {
+      gap: 8px;
+      p {
+        color: #272936;
+        font-family: Medium 500;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+      }
+    }
+
+    .categoriesView {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 0 10px;
+    }
+  }
+  .title {
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; /* 150% */
+    letter-spacing: 0.25px;
+  }
+}
+.inputActivity {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+}
+.textInput {
+  height: 100%;
+  border: 0;
+}
+.selectsActivity {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.cardsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.cardsGrid > * {
+  width: 40%;
+}
+@media (max-width: 1200px) {
+  .cardsGrid > * {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.DownArrow {
+  transform: rotate(180deg);
+}
+
+.hideCategory {
+  display: none;
+}
+
+.categoryDisplayButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  margin-right: 2rem;
+}
+.categoryDisplayButton:hover {
+  background: #d4f0ff;
+  border: none;
+}
+
+.categoryDisplayButton:focus {
+  background: #b4e5fc;
+  outline: none;
+}

@@ -1,0 +1,25 @@
+.cardActivity{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ECECEC;
+    border-radius: 16px;
+    font-family: "Ubuntu", sans-serif;
+    padding: 16px;
+    gap: 16px;
+    background-color: #FFFFFF;
+    
+    .partsCards{
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10px;
+        }
+        .cardsName{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    
+    }
+}
+
