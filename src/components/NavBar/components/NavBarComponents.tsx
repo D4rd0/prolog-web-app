@@ -11,7 +11,7 @@ export const NavBarComponents = () => {
     Home = 'home',
     Notification = 'notification',
     Profile = 'profile',
-    Goals = 'goals',
+    Terms = 'terms',
     Activities = 'activities',
     Achievements = 'achievements',
     Tools = 'tools',
@@ -24,7 +24,7 @@ export const NavBarComponents = () => {
     [CheckKeys.Home]: false,
     [CheckKeys.Notification]: false,
     [CheckKeys.Profile]: false,
-    [CheckKeys.Goals]: false,
+    [CheckKeys.Terms]: false,
     [CheckKeys.Activities]: false,
     [CheckKeys.Achievements]: false,
     [CheckKeys.Tools]: false,
@@ -43,11 +43,11 @@ export const NavBarComponents = () => {
     console.log('path', path);
 
     switch (path) {
-      case '/':
+      case '/introduccion':
         setChecks({ ...checkInitialStatement, [CheckKeys.Home]: true });
         break;
-      case '/goals':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Goals]: true });
+      case '/terminos':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Terms]: true });
         break;
       case '/activities':
         setChecks({ ...checkInitialStatement, [CheckKeys.Activities]: true });
@@ -91,7 +91,7 @@ export const NavBarComponents = () => {
         <ul>
           <li>
             <ReusableNavLink
-              url="/"
+              url="/introduccion"
               //src={NavBarIcons.homeIcon}
               filter={checks.home}
               page="Introducción"
@@ -100,9 +100,9 @@ export const NavBarComponents = () => {
 
           <li>
             <ReusableNavLink
-              url="/goals"
-              filter={checks.goals}
-              page="Goals"
+              url="/terminos"
+              filter={checks.terms}
+              page="Términos"
             />
           </li>
 
