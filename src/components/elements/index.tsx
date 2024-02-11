@@ -1,7 +1,4 @@
-//Here we expot all the elements that we have created
-
-export { Tag } from './Tag/Tag';
-export { CardActivity } from './CardActivity/CardActivity';
+//Here we export all the elements that we have created
 export {
   ReusableNavLink,
   ReusableNavLinkAvatar,
