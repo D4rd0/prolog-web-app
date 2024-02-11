@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './TopBar.css';
-import logo from '../../../assets/capgemini_logos/Logo.svg';
+import logo from '../../../assets/prolog_logos/prolog_logo.svg';
 import { NavBarIcons } from '../../../assets/navbarIcons/navBarSvg';
 import { ReusableNavLinkAvatar, ReusableNavLink } from '../../elements/index';
 

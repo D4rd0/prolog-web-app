@@ -93,16 +93,6 @@ export const NavBarComponents = () => {
   return (
     <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
       <div className="subSidebar">
-        <div
-          className={`toggleButtonDiv ${collapsed ? 'buttonCollapsed' : ''}`}
-        >
-          <img
-            src={collapsed ? NavBarIcons.rightArrow : NavBarIcons.leftArrow}
-            alt={collapsed ? 'Right Arrow' : 'Left Arrow'}
-            onClick={handleToggleCollapse}
-            className="iconMargin"
-          />
-        </div>
 
         <ul>
           <li>
@@ -161,23 +151,6 @@ export const NavBarComponents = () => {
             />
           </li>
         </ul>
-      </div>
-
-      <div className="buttonSection">
-        <button className={`lightMode ${collapsed ? 'collapsed' : ''}`}>
-          <img
-            className="lightModeIcon"
-            src={NavBarIcons.lightModeIcon}
-            alt="LightMode Icon"
-          />
-          <span
-            className={` ${
-              collapsed ? 'lightModeTextHidden' : 'lightModeText'
-            }`}
-          >
-            Light Mode
-          </span>
-        </button>
       </div>
     </div>
   );
