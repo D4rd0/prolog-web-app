@@ -55,7 +55,6 @@ export const NavBarComponents = () => {
 
   return (
     <div className={`sidebar`}>
-      <div className="subSidebar">
         <ul>
           <li>
             <ReusableNavLink
@@ -97,8 +96,47 @@ export const NavBarComponents = () => {
               page="Other tools"
             />
           </li>
+
+          <li>
+            <ReusableNavLink
+              url="/tools"
+              filter={checks.tools}
+              page="Other tools"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/tools"
+              filter={checks.tools}
+              page="Other tools"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/tools"
+              filter={checks.tools}
+              page="Other tools"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/tools"
+              filter={checks.tools}
+              page="Other tools"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/tools"
+              filter={checks.tools}
+              page="Other tools"
+            />
+          </li>
         </ul>
-      </div>
     </div>
   );
 };
