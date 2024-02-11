@@ -40,44 +40,12 @@ export const NavBarComponents = () => {
   }, [location]);
 
   const isActiveLink = (path: string) => {
-    console.log('path', path);
-
     switch (path) {
       case '/introduccion':
         setChecks({ ...checkInitialStatement, [CheckKeys.Home]: true });
         break;
       case '/terminos':
         setChecks({ ...checkInitialStatement, [CheckKeys.Terms]: true });
-        break;
-      case '/activities':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Activities]: true });
-        break;
-      case '/achievements':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Achievements]: true });
-        break;
-      case '/tools':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Tools]: true });
-        break;
-      case '/manage/activities':
-        setChecks({
-          ...checkInitialStatement,
-          [CheckKeys.ManageActivities]: true,
-        });
-        break;
-      case '/manage/goals':
-        setChecks({ ...checkInitialStatement, [CheckKeys.ManageGoals]: true });
-        break;
-      case '/manage/statistics':
-        setChecks({
-          ...checkInitialStatement,
-          [CheckKeys.ManageStatistics]: true,
-        });
-        break;
-      case '/notifications':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Notification]: true });
-        break;
-      case '/profile':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Profile]: true });
         break;
 
       default:

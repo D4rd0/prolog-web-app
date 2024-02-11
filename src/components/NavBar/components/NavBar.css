@@ -21,16 +21,6 @@
   padding-top: 2rem;
 }
 
-.toggleButtonDiv {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 1rem;
-}
-
-.logoImage {
-  margin-left: 0.25rem;
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -48,17 +38,6 @@
   margin-bottom: 2rem;
 }
 
-.littleTile {
-  color: #b2b2b2;
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Ubuntu;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0.016rem;
-}
-
 .sidebar ul li span {
   position: absolute;
   padding-left: 1.25rem;
@@ -74,22 +53,6 @@
   margin-bottom: 3.75rem;
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-.lowerSection {
-  padding-bottom: 1.125rem;
-  background-color: #fafafa;
-}
-
-.buttonSection {
-  padding-bottom: 40px;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.iconMargin {
-  margin-right: 0.5rem;
-  margin-left: -0.5rem;
 }
 
 .filterEffect {
