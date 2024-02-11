@@ -8,10 +8,6 @@ export const NavBarComponents = () => {
 
   const location = useLocation();
 
-  const handleToggleCollapse = () => {
-    setCollapsed(!collapsed);
-  };
-
   enum CheckKeys {
     Home = 'home',
     Notification = 'notification',
@@ -101,7 +97,6 @@ export const NavBarComponents = () => {
               src={NavBarIcons.homeIcon}
               alt="Home icon"
               filter={checks.home}
-              collapsed={` ${collapsed ? 'textHidden' : 'textShown'}`}
               page="Homepage"
             />
           </li>
@@ -112,7 +107,6 @@ export const NavBarComponents = () => {
               src={NavBarIcons.factCheckIcon}
               alt="Goal Icon"
               filter={checks.goals}
-              collapsed={` ${collapsed ? 'textHidden' : 'textShown'}`}
               page="Goals"
             />
           </li>
@@ -123,30 +117,26 @@ export const NavBarComponents = () => {
               src={NavBarIcons.calendarIcon}
               alt="Activities Icon"
               filter={checks.activities}
-              collapsed={` ${collapsed ? 'textHidden' : 'textShown'}`}
               page="Activities"
             />
           </li>
 
-          <li className="groupBetween"></li>
           <li>
             <ReusableNavLink
               url="/achievements"
               src={NavBarIcons.achievementIcon}
               alt="Achievements Icon"
               filter={checks.achievements}
-              collapsed={` ${collapsed ? 'textHidden' : 'textShown'}`}
               page="Achievements"
             />
           </li>
 
-          <li className="group2">
+          <li>
             <ReusableNavLink
               url="/tools"
               src={NavBarIcons.customizeIcon}
               alt="Achievements Icon"
               filter={checks.tools}
-              collapsed={` ${collapsed ? 'textHidden' : 'textShown'}`}
               page="Other tools"
             />
           </li>

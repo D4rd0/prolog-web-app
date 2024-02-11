@@ -88,51 +88,11 @@ export const TopBarComponents = () => {
 
   return (
     <div className="top-nav">
-      <div className="left-section">
-        <h2 className="logoImage">
+      <h2 className="logoImage">
           <NavLink to="/" style={{ paddingBottom: '0.313rem' }}>
             <img src={logo} alt="Logo Icon" />
           </NavLink>
-        </h2>
-      </div>
-      <div className="right-section">
-        <ReusableNavLink
-          url="/manage/goals"
-          src={NavBarIcons.manageGoals}
-          alt="Notification Icon"
-          filter={checks.manageGoals}
-          page="Manage goals"
-        />
-        <ReusableNavLink
-          url="/manage/activities"
-          src={NavBarIcons.manageActivities}
-          alt="Notification Icon"
-          filter={checks.manageActivities}
-          page="Manage activities"
-        />
-
-        <ReusableNavLink
-          url="/manage/statistics"
-          src={NavBarIcons.barChar}
-          alt="Notification Icon"
-          filter={checks.manageStatistics}
-          page="Manage statistics"
-        />
-        <div className="blankSpace" />
-
-        <ReusableNavLink
-          url="/notifications"
-          src={NavBarIcons.notifications}
-          alt="Notification Icon"
-          filter={checks.notification}
-        />
-
-        <ReusableNavLinkAvatar
-          url="/profile"
-          src={NavBarIcons.avatar}
-          alt="Avatar Icon"
-        />
-      </div>
+      </h2>
     </div>
   );
 };

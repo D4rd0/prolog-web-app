@@ -90,46 +90,6 @@
   margin-right: 2rem;
 }
 
-.sidebar ul li.groupBetween::before {
-  content: '';
-  display: block;
-  height: 0.063rem;
-  background-color: #555;
-  margin: 0 auto;
-  width: 110%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.lightMode {
-  bottom: 3rem;
-  margin-left: 2rem;
-  display: flex;
-  align-items: center;
-  border-radius: 2.375rem;
-  border: 0.125rem solid #b2e4ff;
-  background: #b2e4ff;
-  width: 9.375rem;
-  height: 3.125rem;
-}
-
-.lightMode.collapsed {
-  margin-left: 2.8rem;
-  width: 3.813rem;
-  height: 3.125rem;
-  transform: translateX(-50%);
-}
-
-.collapseButton.collapsed {
-  margin-left: 2rem;
-  cursor: pointer;
-}
-
-.collapseButton {
-  margin-left: 11.25rem;
-  cursor: pointer;
-}
-
 .lowerSection {
   padding-bottom: 1.125rem;
   background-color: #fafafa;
@@ -139,45 +99,6 @@
   padding-bottom: 40px;
   align-items: center;
   background-color: #ffffff;
-}
-
-.lightModeText {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.1s ease-out 0.1s;
-  margin-bottom: 0.25rem;
-  overflow: hidden;
-  transition-delay: 0.1s;
-}
-
-.lightModeTextHidden {
-  visibility: hidden;
-  transition: opacity 0.1s ease-out 0.1s;
-  opacity: 0;
-  overflow: hidden;
-  margin-bottom: 0.25rem;
-  transition-delay: 0.1s;
-}
-
-.textShown {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.15s ease-out 0.15s;
-  margin-bottom: 0.25rem;
-  overflow: hidden;
-}
-
-.textHidden {
-  visibility: hidden;
-  transition: opacity 0.1s ease-out 0.1s;
-  opacity: 0;
-  overflow: hidden;
-  margin-bottom: 0.25rem;
-  transition-delay: 0.1s;
-}
-
-.lightModeIcon {
-  margin-left: -0.158rem;
 }
 
 .iconMargin {
