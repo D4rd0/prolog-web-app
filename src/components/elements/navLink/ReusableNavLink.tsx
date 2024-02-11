@@ -14,10 +14,8 @@ const activeNavLinkStyle = {
 
 interface reusable {
   url: string;
-  src: string;
-  alt: string;
+  src?: string;
   filter: boolean;
-  collapsed?: string;
   page?: string;
 }
 
@@ -39,7 +37,6 @@ export const ReusableNavLink = (reusable: reusable) => {
     >
       <img
         src={reusable.src}
-        alt={reusable.alt}
         className="iconMargin"
         style={{
           filter: reusable.filter
@@ -48,7 +45,7 @@ export const ReusableNavLink = (reusable: reusable) => {
         }}
       />
       {reusable.page ? (
-        <span className={reusable.collapsed ? reusable.collapsed : ''}>
+        <span>
           {reusable.page}
         </span>
       ) : (

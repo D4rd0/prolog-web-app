@@ -27,22 +27,8 @@
   margin-right: 1rem;
 }
 
-/* .toggleButtonDiv.collapsed {
-  display: flex;
-  justify-content: center;
-} */
-
-.buttonCollapsed {
-  justify-content: center;
-  margin-left: 1rem;
-}
-
 .logoImage {
   margin-left: 0.25rem;
-}
-
-.sidebar.collapsed {
-  width: 6.25rem;
 }
 
 .sidebar ul {

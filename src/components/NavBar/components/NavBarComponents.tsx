@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './NavBar.css';
-import { NavBarIcons } from '../../../assets/navbarIcons/navBarSvg';
 import { ReusableNavLink } from '../../elements/navLink/ReusableNavLink';
+
 export const NavBarComponents = () => {
-  const [collapsed, setCollapsed] = useState(false);
 
   const location = useLocation();
 
@@ -87,25 +86,21 @@ export const NavBarComponents = () => {
   };
 
   return (
-    <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+    <div className={`sidebar`}>
       <div className="subSidebar">
-
         <ul>
           <li>
             <ReusableNavLink
               url="/"
-              src={NavBarIcons.homeIcon}
-              alt="Home icon"
+              //src={NavBarIcons.homeIcon}
               filter={checks.home}
-              page="Homepage"
+              page="Introducción"
             />
           </li>
 
           <li>
             <ReusableNavLink
               url="/goals"
-              src={NavBarIcons.factCheckIcon}
-              alt="Goal Icon"
               filter={checks.goals}
               page="Goals"
             />
@@ -114,8 +109,6 @@ export const NavBarComponents = () => {
           <li>
             <ReusableNavLink
               url="/activities"
-              src={NavBarIcons.calendarIcon}
-              alt="Activities Icon"
               filter={checks.activities}
               page="Activities"
             />
@@ -124,8 +117,6 @@ export const NavBarComponents = () => {
           <li>
             <ReusableNavLink
               url="/achievements"
-              src={NavBarIcons.achievementIcon}
-              alt="Achievements Icon"
               filter={checks.achievements}
               page="Achievements"
             />
@@ -134,8 +125,6 @@ export const NavBarComponents = () => {
           <li>
             <ReusableNavLink
               url="/tools"
-              src={NavBarIcons.customizeIcon}
-              alt="Achievements Icon"
               filter={checks.tools}
               page="Other tools"
             />
