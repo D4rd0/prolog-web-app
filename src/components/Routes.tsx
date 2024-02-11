@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
+import { NavBar } from './NavBar/containers/NavBar';
+import './RoutesStyle.css';
 import { Home } from './pages/containers/Home';
 import { Terms } from './pages/containers/Terms';
-import './RoutesStyle.css';
-import { NavBar } from './NavBar/containers/NavBar';
 
 export const AppRoutes = () => {
   return (
