@@ -96,46 +96,6 @@ export const NavBarComponents = () => {
               page="Other tools"
             />
           </li>
-
-          <li>
-            <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
-            />
-          </li>
-
-          <li>
-            <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
-            />
-          </li>
-
-          <li>
-            <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
-            />
-          </li>
-
-          <li>
-            <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
-            />
-          </li>
-
-          <li>
-            <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
-            />
-          </li>
         </ul>
     </div>
   );
