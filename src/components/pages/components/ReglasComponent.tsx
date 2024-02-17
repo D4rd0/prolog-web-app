@@ -1,4 +1,4 @@
-export const TermsComponent = () => {
+export const ReglasComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
       Términos

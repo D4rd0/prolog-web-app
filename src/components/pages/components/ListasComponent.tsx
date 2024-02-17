@@ -1,4 +1,4 @@
-export const HomeComponent = () => {
+export const ListasComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
       Introducción a Prolog

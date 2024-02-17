@@ -8,29 +8,25 @@ export const NavBarComponents = () => {
   const location = useLocation();
 
   enum CheckKeys {
-    Home = 'home',
-    Notification = 'notification',
-    Profile = 'profile',
-    Terms = 'terms',
-    Activities = 'activities',
-    Achievements = 'achievements',
-    Tools = 'tools',
-    ManageGoals = 'manageGoals',
-    ManageActivities = 'manageActivities',
-    ManageStatistics = 'manageStatistics',
+    Introduccion = 'introduccion',
+    Terminos = 'terminos',
+    Clausulas = 'clausulas',
+    Hechos = 'hechos',
+    Reglas = 'reglas',
+    Consultas = 'consultas',
+    Operadores = 'operadores',
+    Listas = 'listas',
   }
 
   const checkInitialStatement: Record<CheckKeys, boolean> = {
-    [CheckKeys.Home]: false,
-    [CheckKeys.Notification]: false,
-    [CheckKeys.Profile]: false,
-    [CheckKeys.Terms]: false,
-    [CheckKeys.Activities]: false,
-    [CheckKeys.Achievements]: false,
-    [CheckKeys.Tools]: false,
-    [CheckKeys.ManageGoals]: false,
-    [CheckKeys.ManageActivities]: false,
-    [CheckKeys.ManageStatistics]: false,
+    [CheckKeys.Introduccion]: false,
+    [CheckKeys.Terminos]: false,
+    [CheckKeys.Clausulas]: false,
+    [CheckKeys.Hechos]: false,
+    [CheckKeys.Reglas]: false,
+    [CheckKeys.Consultas]: false,
+    [CheckKeys.Operadores]: false,
+    [CheckKeys.Listas]: false,
   };
 
   const [checks, setChecks] = useState(checkInitialStatement);
@@ -42,10 +38,28 @@ export const NavBarComponents = () => {
   const isActiveLink = (path: string) => {
     switch (path) {
       case '/introduccion':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Home]: true });
+        setChecks({ ...checkInitialStatement, [CheckKeys.Introduccion]: true });
         break;
       case '/terminos':
-        setChecks({ ...checkInitialStatement, [CheckKeys.Terms]: true });
+        setChecks({ ...checkInitialStatement, [CheckKeys.Terminos]: true });
+        break;
+      case '/clausulas':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Clausulas]: true });
+        break;
+      case '/hechos':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Hechos]: true });
+        break;
+      case '/reglas':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Reglas]: true });
+        break;
+      case '/consultas':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Consultas]: true });
+        break;
+      case '/operadores':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Operadores]: true });
+        break;
+      case '/listas':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Listas]: true });
         break;
 
       default:
@@ -60,7 +74,7 @@ export const NavBarComponents = () => {
             <ReusableNavLink
               url="/introduccion"
               //src={NavBarIcons.homeIcon}
-              filter={checks.home}
+              filter={checks.introduccion}
               page="Introducción"
             />
           </li>
@@ -68,32 +82,56 @@ export const NavBarComponents = () => {
           <li>
             <ReusableNavLink
               url="/terminos"
-              filter={checks.terms}
+              filter={checks.terminos}
               page="Términos"
             />
           </li>
 
           <li>
             <ReusableNavLink
-              url="/activities"
-              filter={checks.activities}
-              page="Activities"
+              url="/clausulas"
+              filter={checks.clausulas}
+              page="Cláusulas"
             />
           </li>
 
           <li>
             <ReusableNavLink
-              url="/achievements"
-              filter={checks.achievements}
-              page="Achievements"
+              url="/hechos"
+              filter={checks.hechos}
+              page="Hechos"
             />
           </li>
 
           <li>
             <ReusableNavLink
-              url="/tools"
-              filter={checks.tools}
-              page="Other tools"
+              url="/reglas"
+              filter={checks.reglas}
+              page="Reglas"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/consultas"
+              filter={checks.consultas}
+              page="Consultas"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/operadores"
+              filter={checks.operadores}
+              page="Operadores"
+            />
+          </li>
+
+          <li>
+            <ReusableNavLink
+              url="/listas"
+              filter={checks.listas}
+              page="Listas"
             />
           </li>
         </ul>
