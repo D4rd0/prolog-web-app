@@ -1,84 +1,154 @@
 export const OperadoresComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
-      Términos
+      Operadores
     </h1>
-    <span>
-      Los términos en Prolog son los componentes que conforman el lenguaje, 
-      y en este caso los únicos elementos que componen un programa son átomos,
-      variables y estructuras.
-    </span>
     <h2>
-      Átomos
-    </h2>
-    <span>
-      En Prolog, un átomo es un término que representa un nombre simbólico o constante. 
-      Los átomos son básicamente identificadores sin argumentos y pueden consistir en letras, 
-      dígitos y subrayados. Los átomos en Prolog deben empezar en minúscula. 
-    </span>
-    <p>
-      Aquí hay un ejemplo de cómo se definen los átomos en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      animal(cebra).
-    </p>
-    <p>
-      color(verde).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Variables
-    </h2>
-    <span>
-      Las variables en Prolog deben empezar en mayúscula o con ‘_’.
-      Una variable anónima se representa por el nombre ‘_’ con la cual 
-      en cada instancia de esta variable se refiere a una variable distinta.
-    </span>
-    <p>
-      A continuación se muestran algunos ejemplos de variables en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      variable(Variable).
-    </p>
-    <p>
-      variable(_).
-    </p>
-    <p>
-      variable(_var).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Estructuras
+      Operadores Aritméticos
     </h2>
     <p>
-      Estos son términos compuestos por otros términos, donde 
-      la sintaxis que se tiene es la siguiente:
+      Mediante estos operadores es posible efectuar operaciones aritméticas entre números ya 
+      sean de tipo entero o real, no obstante se han considerado solamente los siguientes 
+      operadores básicos:
     </p>
-    <strong>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Significado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>+</td>
+          <td>Suma</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Resta</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Multiplicación</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>División</td>
+        </tr>
+        <tr>
+          <td>//</td>
+          <td>División entera</td>
+        </tr>
+        <tr>
+          <td>^ y **</td>
+          <td>Potencia</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>
+      Operadores Relacionales
+    </h2>
     <p>
-      nombre_atomo(termino1, termino2, ..., terminoN).
+      Los operadores relacionales se utilizan para realizar comparaciones entre términos. 
+      Estos operadores permiten establecer relaciones de orden entre valores y son fundamentales 
+      en la lógica de programación en Prolog. Aquí hay algunos de los operadores relacionales más 
+      comunes:
     </p>
-    </strong>
+    <table>
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Significado</th>
+          <th>Ejemplos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>is</td>
+          <td>Unificación</td>
+          <td>X is 8 + 2</td>
+        </tr>
+        <tr>
+          <td>==</td>
+          <td>Igualdad</td>
+          <td>10 + 4 == 7 + 7</td>
+        </tr>
+        <tr>
+          <td>\==</td>
+          <td>Desigualdad</td>
+          <td>10 + 2 \== 5 + 8</td>
+        </tr>
+        <tr>
+          <td>{">"}</td>
+          <td>Mayor que</td>
+          <td>11 * 3 {">"} 3 ^ 2</td>
+        </tr>
+        <tr>
+          <td>{"<"}</td>
+          <td>Menor que</td>
+          <td>2 ** 10 {"<"} 5 * 2</td>
+        </tr>
+        <tr>
+          <td>{">"}=</td>
+          <td>Mayor o igual que</td>
+          <td>99.0 {">"}= 0</td>
+        </tr>
+        <tr>
+          <td>={"<"}</td>
+          <td>Igual o menor que</td>
+          <td>-15 ={"<"} 15</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>
+      Operadores de listas
+    </h2>
     <p>
-      Donde esos términos del 1 al N, se les llama argumentos. 
-      Además, al nombre del átomo también se le llama predicado.
+      Los operadores de listas son herramientas clave para manipular y trabajar con listas de 
+      manera efectiva. Algunos de los operadores y predicados más comunes relacionados con listas 
+      en Prolog son los siguientes:
     </p>
-    <p>
-      Aquí hay un ejemplo de cómo se definen las estructuras en Prolog:
-    </p>
-    <strong>
-    <p>
-      tiene_patas(elefante, 4).
-    </p>
-    <p>
-      edad(luis, 30).
-    </p>
-    </strong>
+    <table>
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Significado</th>
+          <th>Ejemplos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>=</td>
+          <td>Unificación</td>
+          <td>[X, Y, Z] = [a, 1, 2.0]</td>
+        </tr>
+        <tr>
+          <td>member(term, list)</td>
+          <td>term ∈ list</td>
+          <td>member(4.0, [c, 3, 4.0]).</td>
+        </tr>
+        <tr>
+          <td>append(list1, list2, result)</td>
+          <td>Une list1 con list2</td>
+          <td>append([h, o], [l, a], X).</td>
+        </tr>
+        <tr>
+          <td>length(list, result)</td>
+          <td>Calcula la longitud de la lista</td>
+          <td>length([3, 0.0, x], X).</td>
+        </tr>
+        <tr>
+          <td>sort(list, result)</td>
+          <td>Ordena la lista</td>
+          <td>sort([4, a, 3], X).</td>
+        </tr>
+        <tr>
+          <td>is_list(term)</td>
+          <td>Comprueba si term es lista</td>
+          <td>is_list([a, list]).</td>
+        </tr>
+      </tbody>
+    </table>
   </div>;
 };
