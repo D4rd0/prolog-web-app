@@ -1,84 +1,31 @@
 export const ConsultasComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
-      Términos
+      Consultas
     </h1>
-    <span>
-      Los términos en Prolog son los componentes que conforman el lenguaje, 
-      y en este caso los únicos elementos que componen un programa son átomos,
-      variables y estructuras.
-    </span>
-    <h2>
-      Átomos
-    </h2>
-    <span>
-      En Prolog, un átomo es un término que representa un nombre simbólico o constante. 
-      Los átomos son básicamente identificadores sin argumentos y pueden consistir en letras, 
-      dígitos y subrayados. Los átomos en Prolog deben empezar en minúscula. 
-    </span>
     <p>
-      Aquí hay un ejemplo de cómo se definen los átomos en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      animal(cebra).
-    </p>
-    <p>
-      color(verde).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Variables
-    </h2>
-    <span>
-      Las variables en Prolog deben empezar en mayúscula o con ‘_’.
-      Una variable anónima se representa por el nombre ‘_’ con la cual 
-      en cada instancia de esta variable se refiere a una variable distinta.
-    </span>
-    <p>
-      A continuación se muestran algunos ejemplos de variables en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      variable(Variable).
-    </p>
-    <p>
-      variable(_).
-    </p>
-    <p>
-      variable(_var).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Estructuras
-    </h2>
-    <p>
-      Estos son términos compuestos por otros términos, donde 
-      la sintaxis que se tiene es la siguiente:
+      En Prolog, una consulta es una expresión que se utiliza para hacer preguntas sobre la base 
+      de conocimientos definida en el programa. La sintaxis de una consulta es similar a la de un 
+      hecho, pero se utiliza un símbolo de interrogación seguido de un guion para indicar una 
+      pregunta. Por ejemplo:
     </p>
     <strong>
     <p>
-      nombre_atomo(termino1, termino2, ..., terminoN).
+      ?- gusta(juan, libro).
     </p>
     </strong>
     <p>
-      Donde esos términos del 1 al N, se les llama argumentos. 
-      Además, al nombre del átomo también se le llama predicado.
+      En esta consulta, se está preguntando si es cierto que a Juan le gusta un libro. El sistema 
+      Prolog buscará en la base de conocimientos y responderá con "sí" o "no", dependiendo de si 
+      encuentra un hecho que unifique con la consulta.
     </p>
     <p>
-      Aquí hay un ejemplo de cómo se definen las estructuras en Prolog:
+      Las consultas permiten obtener información específica de la base de conocimientos, realizar 
+      verificaciones lógicas y explorar las relaciones definidas en el programa. Es mediante las 
+      consultas que se interactúa con el sistema para obtener respuestas lógicas basadas en las 
+      reglas y hechos previamente establecidos.
     </p>
-    <strong>
-    <p>
-      tiene_patas(elefante, 4).
-    </p>
-    <p>
-      edad(luis, 30).
-    </p>
-    </strong>
+
+    
   </div>;
 };

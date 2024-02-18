@@ -1,83 +1,61 @@
 export const HechosComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
-      Términos
+      Hechos
     </h1>
-    <span>
-      Los términos en Prolog son los componentes que conforman el lenguaje, 
-      y en este caso los únicos elementos que componen un programa son átomos,
-      variables y estructuras.
-    </span>
-    <h2>
-      Átomos
-    </h2>
-    <span>
-      En Prolog, un átomo es un término que representa un nombre simbólico o constante. 
-      Los átomos son básicamente identificadores sin argumentos y pueden consistir en letras, 
-      dígitos y subrayados. Los átomos en Prolog deben empezar en minúscula. 
-    </span>
     <p>
-      Aquí hay un ejemplo de cómo se definen los átomos en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      animal(cebra).
+      En Prolog, un hecho es una afirmación simple que establece una relación directa entre un 
+      predicado y sus argumentos, y se considera verdadero sin ninguna condición adicional. 
     </p>
     <p>
-      color(verde).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Variables
-    </h2>
-    <span>
-      Las variables en Prolog deben empezar en mayúscula o con ‘_’.
-      Una variable anónima se representa por el nombre ‘_’ con la cual 
-      en cada instancia de esta variable se refiere a una variable distinta.
-    </span>
-    <p>
-      A continuación se muestran algunos ejemplos de variables en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      variable(Variable).
+      Los hechos son la forma más básica de representar información en Prolog y consisten en la 
+      declaración de un predicado para ciertos términos.  
     </p>
     <p>
-      variable(_).
-    </p>
-    <p>
-      variable(_var).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Estructuras
-    </h2>
-    <p>
-      Estos son términos compuestos por otros términos, donde 
-      la sintaxis que se tiene es la siguiente:
+      La sintaxis de un hecho es la siguiente:
     </p>
     <strong>
     <p>
-      nombre_atomo(termino1, termino2, ..., terminoN).
+      predicado(argumentos).
     </p>
     </strong>
     <p>
-      Donde esos términos del 1 al N, se les llama argumentos. 
-      Además, al nombre del átomo también se le llama predicado.
+      Donde el predicado es un átomo que describe una propiedad o relación, y los argumentos son 
+      términos específicos asociados con esa afirmación, como constantes, variables o estructuras 
+      más complejas. Estos hechos proporcionan la base sobre la cual se construyen reglas y consultas 
+      en programas Prolog.
     </p>
     <p>
-      Aquí hay un ejemplo de cómo se definen las estructuras en Prolog:
+      Los hechos se dividen en 2 tipos:
+    </p>
+    <h2>
+      Propiedades
+    </h2>
+    <p>
+      Las propiedades se caracterizan por llevar un solo argumento y de esta manera expresan una 
+      propiedad de los objetos. Por ejemplo:
     </p>
     <strong>
     <p>
-      tiene_patas(elefante, 4).
+      color(azul).
     </p>
     <p>
-      edad(luis, 30).
+      planeta(marte).
+    </p>
+    </strong>
+    <h2>
+      Relaciones
+    </h2>
+    <p>
+      Las relaciones se caracterizan por llevar más de un argumento y de esta manera expresan la
+      relación entre varios objetos. Por ejemplo:
+    </p>
+    <strong>
+    <p>
+      padre(antonio, luis).
+    </p>
+    <p>
+      edad(jose, 30).
     </p>
     </strong>
   </div>;

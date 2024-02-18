@@ -1,84 +1,48 @@
 export const ClausulasComponent = () => {
   return <div style={{color:'black'}}>
     <h1>
-      Términos
+      Cláusulas
     </h1>
     <span>
-      Los términos en Prolog son los componentes que conforman el lenguaje, 
-      y en este caso los únicos elementos que componen un programa son átomos,
-      variables y estructuras.
+      Una cláusula es la unidad básica de construcción en un programa Prolog. Una cláusula puede 
+      ser un hecho, una regla o una consulta, y su estructura está determinada por la sintaxis del 
+      lenguaje.
     </span>
-    <h2>
-      Átomos
-    </h2>
-    <span>
-      En Prolog, un átomo es un término que representa un nombre simbólico o constante. 
-      Los átomos son básicamente identificadores sin argumentos y pueden consistir en letras, 
-      dígitos y subrayados. Los átomos en Prolog deben empezar en minúscula. 
-    </span>
-    <p>
-      Aquí hay un ejemplo de cómo se definen los átomos en Prolog:
-    </p>
-    <span>
     <strong>
     <p>
-      animal(cebra).
-    </p>
-    <p>
-      color(verde).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Variables
-    </h2>
-    <span>
-      Las variables en Prolog deben empezar en mayúscula o con ‘_’.
-      Una variable anónima se representa por el nombre ‘_’ con la cual 
-      en cada instancia de esta variable se refiere a una variable distinta.
-    </span>
-    <p>
-      A continuación se muestran algunos ejemplos de variables en Prolog:
-    </p>
-    <span>
-    <strong>
-    <p>
-      variable(Variable).
-    </p>
-    <p>
-      variable(_).
-    </p>
-    <p>
-      variable(_var).
-    </p>
-    </strong>
-    </span>
-    <h2>
-      Estructuras
-    </h2>
-    <p>
-      Estos son términos compuestos por otros términos, donde 
-      la sintaxis que se tiene es la siguiente:
-    </p>
-    <strong>
-    <p>
-      nombre_atomo(termino1, termino2, ..., terminoN).
+      p :- p1, p2, …, pm.
     </p>
     </strong>
     <p>
-      Donde esos términos del 1 al N, se les llama argumentos. 
-      Además, al nombre del átomo también se le llama predicado.
+      Donde p es la cabeza y todos los pi son el cuerpo.
     </p>
     <p>
-      Aquí hay un ejemplo de cómo se definen las estructuras en Prolog:
+      Tipos de cláusulas:
+    </p>
+    <p>
+      •	Una cláusula con cabeza y sin cuerpo se llama <strong>hecho.</strong>
+    </p>
+    <p>
+      •	Una cláusula con cabeza y con cuerpo se llama <strong>regla.</strong>
+    </p>
+    <p>
+      •	Una cláusula sin cabeza y con cuerpo se llama <strong> consulta.</strong>
+    </p>
+    <p>
+      Un ejemplo de cláusula es el siguiente:
     </p>
     <strong>
     <p>
-      tiene_patas(elefante, 4).
-    </p>
-    <p>
-      edad(luis, 30).
+      come(A,B) :-   carnivoro(A), animal(B), masDebil(B, A);
+      herbivoro(A), plantaComestible(B).
     </p>
     </strong>
+    <p>
+      Esta cláusula reescrita al lenguaje natural se leería de la siguiente manera:
+    </p>
+    <p>
+      "A come a B si, A es carnívoro y B es animal y B es más débil que A, o si A es 
+      herbívoro y B es una planta comestible."
+    </p>
   </div>;
 };
