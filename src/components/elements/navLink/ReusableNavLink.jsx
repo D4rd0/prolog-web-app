@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const navLinkStyle = {
@@ -12,23 +13,11 @@ const activeNavLinkStyle = {
   alignItems: 'center',
 };
 
-interface reusable {
-  url: string;
-  src?: string;
-  filter: boolean;
-  page?: string;
-}
-
-interface reusableAvatar {
-  url: string;
-  src: string;
-  alt: string;
-}
-
-export const ReusableNavLink = (reusable: reusable) => {
+const ReusableNavLink = (props) => {
+  const { url, src, filter, page } = props;
   return (
     <NavLink
-      to={reusable.url}
+      to={url}
       style={({ isActive }) => {
         return isActive
           ? { ...navLinkStyle, ...activeNavLinkStyle }
@@ -36,17 +25,17 @@ export const ReusableNavLink = (reusable: reusable) => {
       }}
     >
       <img
-        src={reusable.src}
+        src={src}
         className="iconMargin"
         style={{
-          filter: reusable.filter
+          filter: filter
             ? 'brightness(0) saturate(100%) invert(22%) sepia(65%) saturate(5315%) hue-rotate(186deg) brightness(93%) contrast(103%)'
             : 'none',
         }}
       />
-      {reusable.page ? (
+      {page ? (
         <span>
-          {reusable.page}
+          {page}
         </span>
       ) : (
         ''
@@ -55,17 +44,20 @@ export const ReusableNavLink = (reusable: reusable) => {
   );
 };
 
-export const ReusableNavLinkAvatar = (reusable: reusableAvatar) => {
+const ReusableNavLinkAvatar = (props) => {
+  const { url, src, alt } = props;
   return (
     <NavLink
-      to={reusable.url}
+      to={url}
       style={({ isActive }) => {
         return isActive
           ? { ...navLinkStyle, ...activeNavLinkStyle }
           : navLinkStyle;
       }}
     >
-      <img src={reusable.src} alt={reusable.alt} className="avatarImg" />
+      <img src={src} alt={alt} className="avatarImg" />
     </NavLink>
   );
 };
+
+export { ReusableNavLink, ReusableNavLinkAvatar };

@@ -1,18 +1,13 @@
+import React from 'react';
 import { NavBarComponents } from '../components/NavBarComponents';
 import { TopBarComponents } from '../components/TopBarComponents';
-import Colors from '../../../assets/colors';
-import { ReactNode } from 'react';
 
-interface Props {
-  children: ReactNode;
-}
-
-export const NavBar: React.FC<Props> = (props) => {
+export const NavBar = (props) => {
   const { children } = props;
   return (
     <div
       className="organizer"
-      style={{ backgroundColor: Colors.tags.light_mode_background }}
+      style={{ backgroundColor: "#F4F8FB" }}
     >
       <TopBarComponents />
       <div style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
@@ -22,3 +17,6 @@ export const NavBar: React.FC<Props> = (props) => {
     </div>
   );
 };
+
+export default NavBar;
+

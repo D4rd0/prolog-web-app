@@ -26,6 +26,16 @@ export const ConsultasComponent = () => {
       reglas y hechos previamente establecidos.
     </p>
 
-    
+    <div>
+      <textarea
+        id="prologQuery"
+        rows={6}
+        cols={75}
+        placeholder="Escribe tu consulta Prolog aquí"
+      >
+      </textarea>
+      <button>Consultar</button>
+      <textarea id="resultados"></textarea>
+    </div>
   </div>;
 };
