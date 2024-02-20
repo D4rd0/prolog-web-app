@@ -1,0 +1,29 @@
+
+<body data-feedly-mini="yes">
+<form name="rules" action="javascript:return false;"><p>
+<textarea cols="90" rows="40" name="rules">
+    animal(leon).
+    animal(tigre).
+    animal(cebra).
+    
+    come(leon, carne).
+    come(tigre, carne).
+    come(cebra, hierba).
+
+    carnivoro(X) :- animal(X), come(X, carne).
+</textarea></p>
+</form>
+<form name="input" action="javascript:freeform(); //">
+<p>	Enter your query:
+</p>
+<p>	<input type="text" name="query" value="carnivoro(leon)" size="90">
+</p>
+<p> <input type="button" value="Run query" onclick="run(); return true;">
+</p>
+</form>
+<form name="output" action="javascript:return false;">
+<p>
+<textarea rows="40" cols="90" name="output"></textarea>
+</p>
+</form>
+</body>

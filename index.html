@@ -5,6 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/prolog_logos/prolog_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prolog Tutorial</title>
+
+    <script src="./jsProlog.js"></script>
+    <script language="JavaScript">
+    <!--
+
+    function run(){
+        var program;
+        var rules = document.rules.rules.value;
+        var query = document.input.query.value;
+        program = new jsProlog.program();
+        loadProgram(program, rules);
+        var sol = program.askQuery(query);
+        document.output.output.value = "";
+        for(var i = 0; i < sol.length; i++){
+            document.output.output.value += sol[i].print()+"\n";
+        }
+
+        //load text as program, each lines is a rule
+        function loadProgram(program, rules){
+            rules = rules.split("\n");
+            for (var r=0; r < rules.length; r++) {
+                var rule = rules[r];
+                program.addRule(rule);
+            }
+        }
+    }
+    // -->
+    </script>
   </head>
   <body>
     <div id="root"></div>
