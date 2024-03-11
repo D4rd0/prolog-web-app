@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import './TopBar.css';
-import logo from '../../../assets/prolog_logos/prolog_logo.svg';
+import logo from '../../../assets/prolog_logo.svg';
 
 export const TopBarComponents = () => {
   return (
