@@ -12,7 +12,7 @@ export const ConsultasComponent = () => {
   }, []);
 
   return (
-    <div style={{ color: 'black' }}>
+    <div style={{ color: 'black', fontFamily: 'Arial, sans-serif', fontSize: '18px' }}>
       <h1>
         Consultas
       </h1>

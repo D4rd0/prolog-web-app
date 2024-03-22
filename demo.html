@@ -1,29 +1,31 @@
 
 <body data-feedly-mini="yes">
 <form name="rules" action="javascript:return false;"><p>
-<textarea cols="90" rows="40" name="rules">
-    animal(leon).
-    animal(tigre).
-    animal(cebra).
+<textarea cols="39" rows="10" name="rules" style="color:black; background-color: #FFFFFF; border: 1px solid #000000; font-family: Arial, sans-serif; font-size: 18px;">
+animal(leon).
+animal(tigre).
+animal(cebra).
     
-    come(leon, carne).
-    come(tigre, carne).
-    come(cebra, hierba).
+come(leon, carne).
+come(tigre, carne).
+come(cebra, hierba).
 
-    carnivoro(X) :- animal(X), come(X, carne).
+carnivoro(X) :- animal(X), come(X, carne).
 </textarea></p>
 </form>
 <form name="input" action="javascript:freeform(); //">
-<p>	Introduce tu consulta:
-</p>
-<p>	<input type="text" name="query" value="carnivoro(leon)" size="90">
-</p>
-<p> <input type="button" value="Run query" onclick="run(); return true;">
-</p>
+<div>
+    <p style="display: inline-block; margin: 0;">
+        <input type="text" name="query" value="carnivoro(leon)" size="37" style="color:black; background-color: #FFFFFF; border: 1px solid #000000; font-family: Arial, sans-serif; font-size: 18px; height: 28px;">
+    </p>
+    <p style="display: inline-block; margin: 0;">
+        <input type="button" value="Ejecutar consulta" onclick="run(); return true;" style="background-color: #3498db; color: white; border: 1px solid #999999; height: 28px;">
+    </p>       
+</div>
 </form>
 <form name="output" action="javascript:return false;">
 <p>
-<textarea rows="40" cols="90" name="output"></textarea>
+<output rows="2" cols="40" name="output" style="color:black; font-family: Arial, sans-serif; font-size: 18px;" ></output>
 </p>
 </form>
 </body>
