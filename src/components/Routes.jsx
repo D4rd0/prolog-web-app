@@ -10,7 +10,6 @@ import { Consultas } from './pages/containers/Consultas';
 import { Operadores } from './pages/containers/Operadores';
 import { Listas } from './pages/containers/Listas';
 import { Register } from './pages/containers/Register';
-import { Login } from './pages/containers/Login';
 
 export const AppRoutes = () => {
   return (
@@ -29,7 +28,6 @@ export const AppRoutes = () => {
               <Route path="/operadores" element={<Operadores />} />
               <Route path="/listas" element={<Listas />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/login" element={<Login />} />
             </Routes>
           </NavBar>
         }
