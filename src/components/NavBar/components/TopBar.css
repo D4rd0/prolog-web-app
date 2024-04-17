@@ -21,7 +21,7 @@
   margin-right: 10px;
 }
 
-.login-button, .register-button, .logout {
+.login-button, .register-button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -29,7 +29,18 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 10px;
+}
+
+.logout {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .login-button:hover, .register-button:hover {
