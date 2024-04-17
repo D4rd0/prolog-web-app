@@ -7,7 +7,7 @@ export const NavBar = (props) => {
   return (
     <div
       className="organizer"
-      style={{ backgroundColor: "#F4F8FB" }}
+      style={{ background: 'linear-gradient(to right, #fcfcfc, #dcdcdc)' }}
     >
       <TopBarComponents />
       <div style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
