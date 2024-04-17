@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './TopBar.css';
 import logo from '../../../assets/prolog_logo.svg';
 
@@ -10,6 +11,14 @@ export const TopBarComponents = () => {
             <img src={logo} alt="Logo Icon" />
           </NavLink>
       </h2>
+      <div class="buttons-container">
+        <Link to="/login">
+          <button class="login-button">Iniciar Sesión</button>
+        </Link>
+        <Link to="/register">
+          <button class="register-button">Registrarse</button>
+        </Link>
+      </div>
     </div>
   );
 };
