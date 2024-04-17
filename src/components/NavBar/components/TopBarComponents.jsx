@@ -19,10 +19,9 @@ export const TopBarComponents = () => {
     const storedUsername = localStorage.getItem('username');
     const storedPassword = localStorage.getItem('password');
     if (username === storedUsername && password === storedPassword) {
-      alert('Login successful!');
       setLoggedIn(true);
     } else {
-      alert('Invalid username or password!');
+      alert('Usuario o contraseña incorrecto');
     }
   };
 

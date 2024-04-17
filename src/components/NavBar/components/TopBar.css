@@ -80,3 +80,7 @@
   display: flex;
   align-items: center;
 }
+
+.logoImage {
+  margin-left: 15px;
+}

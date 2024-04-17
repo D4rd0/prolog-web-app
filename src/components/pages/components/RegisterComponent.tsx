@@ -8,7 +8,7 @@ export const RegisterComponent = () => {
   const handleRegister = () => {
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
-    alert('Registration successful!');
+    alert('Registro exitoso!');
   };
 
   return <div style={{color:'black'}}>
