@@ -36,12 +36,13 @@ export const TopBarComponents = () => {
       </h2>
       {loggedIn ? (
         <div className="user-info">
-          <button onClick={handleLogout}>Cerrar sesión</button>
+          <p class="welcome">{username}</p>
+          <button class="logout" onClick={handleLogout}>Cerrar sesión</button>
         </div>
       ) : (
         <div class="buttons-container">
-          <input type="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input class="usuario" type="username" placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input class="contraseña" type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
           <button class="login-button" onClick={handleLogin}>Iniciar Sesión</button>
           <NavLink to="/register">
             <button class="register-button">Registrarse</button>

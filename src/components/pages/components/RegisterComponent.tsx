@@ -12,8 +12,8 @@ export const RegisterComponent = () => {
   };
 
   return <div style={{color:'black'}}>
-      <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
-      <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <input type="text" placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
       <button onClick={handleRegister}>Register</button>
     </div>;
 };
