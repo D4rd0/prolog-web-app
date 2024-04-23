@@ -16,28 +16,10 @@ export const ConsultasComponent = () => {
       <h1>
         Consultas
       </h1>
-      <p>
-        En Prolog, una consulta es una expresión que se utiliza para hacer preguntas sobre la base 
-        de conocimientos definida en el programa. La sintaxis de una consulta es similar a la de un 
-        hecho, pero se utiliza un símbolo de interrogación seguido de un guion para indicar una 
-        pregunta. Por ejemplo:
-      </p>
-      <strong>
-      <p>
-        ?- gusta(juan, libro).
-      </p>
-      </strong>
-      <p>
-        En esta consulta, se está preguntando si es cierto que a Juan le gusta un libro. El sistema 
-        Prolog buscará en la base de conocimientos y responderá con "sí" o "no", dependiendo de si 
-        encuentra un hecho que unifique con la consulta.
-      </p>
-      <p>
-        Las consultas permiten obtener información específica de la base de conocimientos, realizar 
-        verificaciones lógicas y explorar las relaciones definidas en el programa. Es mediante las 
-        consultas que se interactúa con el sistema para obtener respuestas lógicas basadas en las 
-        reglas y hechos previamente establecidos.
-      </p>
+      <p>En Prolog, una consulta es una cl&aacute;usula que se utiliza para hacer preguntas a la base de conocimiento definida en el programa. La sintaxis de una consulta es similar a la de una cl&aacute;usula sin cabeza, pero se utiliza un s&iacute;mbolo de interrogaci&oacute;n seguido de un guion en lugar de &lsquo;:-&rsquo;. Por ejemplo:</p>
+      <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ?- gusta(juan, libro).</strong></p>
+      <p>En esta consulta, se est&aacute; preguntando si es cierto que a Juan le gusta un libro. El sistema Prolog buscar&aacute; en la base de conocimiento y responder&aacute; con "s&iacute;" o "no", o bien con los valores correspondientes si hubiera variables en la consulta empleando para ello un mecanismo de inferencia.</p>
+      <p>Las consultas permiten obtener informaci&oacute;n espec&iacute;fica de la base de conocimiento, realizar verificaciones l&oacute;gicas y explorar las relaciones definidas en el programa. Es mediante las consultas que se interact&uacute;a con el sistema para obtener respuestas l&oacute;gicas basadas en las reglas y hechos previamente establecidos.</p>
 
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
 

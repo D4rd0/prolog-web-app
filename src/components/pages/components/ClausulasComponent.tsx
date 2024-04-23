@@ -3,46 +3,18 @@ export const ClausulasComponent = () => {
     <h1>
       Cláusulas
     </h1>
-    <span>
-      Una cláusula es la unidad básica de construcción en un programa Prolog. Una cláusula puede 
-      ser un hecho, una regla o una consulta, y su estructura está determinada por la sintaxis del 
-      lenguaje.
-    </span>
-    <strong>
-    <p>
-      p :- p1, p2, …, pm.
-    </p>
-    </strong>
-    <p>
-      Donde p es la cabeza y todos los pi son el cuerpo.
-    </p>
-    <p>
-      Tipos de cláusulas:
-    </p>
-    <p>
-      •	Una cláusula con cabeza y sin cuerpo se llama <strong>hecho.</strong>
-    </p>
-    <p>
-      •	Una cláusula con cabeza y con cuerpo se llama <strong>regla.</strong>
-    </p>
-    <p>
-      •	Una cláusula sin cabeza y con cuerpo se llama <strong> consulta.</strong>
-    </p>
-    <p>
-      Un ejemplo de cláusula es el siguiente:
-    </p>
-    <strong>
-    <p>
-      come(A,B) :-   carnivoro(A), animal(B), masDebil(B, A);
-      herbivoro(A), plantaComestible(B).
-    </p>
-    </strong>
-    <p>
-      Esta cláusula reescrita al lenguaje natural se leería de la siguiente manera:
-    </p>
-    <p>
-      "A come a B si, A es carnívoro y B es animal y B es más débil que A, o si A es 
-      herbívoro y B es una planta comestible."
-    </p>
+    <p>Una cl&aacute;usula es la unidad b&aacute;sica de construcci&oacute;n en un programa Prolog. Una cl&aacute;usula puede ser un hecho, una regla o una consulta, y su estructura est&aacute; determinada por la sintaxis del lenguaje.</p>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h :- q1, q2, &hellip;, qm.</strong></p>
+<p>donde <em>h</em> es la <strong>cabeza</strong> de la cl&aacute;usula (un &aacute;tomo) y q<sub>1</sub>, q<sub>2</sub>, &hellip;, q<sub>n</sub> es el <strong>cuerpo</strong> (una secuencia de literales).</p>
+<p>Existen tres tipos distintos de cl&aacute;usulas:</p>
+<ul>
+<li>Una cl&aacute;usula que tiene cabeza y no tiene cuerpo se llama <strong>hecho</strong>.</li>
+<li>Una cl&aacute;usula que tiene cabeza y tiene cuerpo se llama <strong>regla</strong>.</li>
+<li>Una cl&aacute;usula que no tiene cabeza y tiene cuerpo se llama <strong>consulta</strong>.</li>
+</ul>
+<p>Un ejemplo de cl&aacute;usula es el siguiente:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>come(A,B) :-&nbsp;&nbsp; carnivoro(A), herbivoro(B), masFuerte(A, B).</strong></p>
+<p>Esta cl&aacute;usula reescrita al lenguaje natural se leer&iacute;a de la siguiente manera:</p>
+<p><em>"A come a B si A es carn&iacute;voro y B es herb&iacute;voro y A es m&aacute;s fuerte que B."</em></p>
   </div>;
 };
