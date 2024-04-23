@@ -15,10 +15,12 @@ export const TopBarComponents = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+ 
   const handleLogin = () => {
-    const storedUsername = localStorage.getItem('username');
-    const storedPassword = localStorage.getItem('password');
-    if (username === storedUsername && password === storedPassword) {
+    const storedUsers = localStorage.getItem('users');
+    const usersData = storedUsers ? JSON.parse(storedUsers) : {};
+    
+    if (usersData[username] === password) {
       setLoggedIn(true);
     } else {
       alert('Usuario o contraseña incorrecto');

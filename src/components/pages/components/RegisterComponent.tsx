@@ -6,9 +6,20 @@ export const RegisterComponent = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+
   const handleRegister = () => {
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
+    const storedUsers = localStorage.getItem('users');
+    const usersData = storedUsers ? JSON.parse(storedUsers) : {};
+    
+    if (usersData[username]) {
+      alert('El nombre de usuario ya está en uso');
+      return;
+    }
+  
+    usersData[username] = password;
+    
+    localStorage.setItem('users', JSON.stringify(usersData));
+    
     alert('Registro exitoso!');
   };
 
