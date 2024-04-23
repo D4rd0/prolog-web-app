@@ -15,6 +15,7 @@ export const NavBarComponents = () => {
     Consultas: 'consultas',
     Operadores: 'operadores',
     Listas: 'listas',
+    negacion: 'negacion',
   };
 
   const checkInitialStatement = {
@@ -24,8 +25,10 @@ export const NavBarComponents = () => {
     [CheckKeys.Hechos]: false,
     [CheckKeys.Reglas]: false,
     [CheckKeys.Consultas]: false,
-    [CheckKeys.Operadores]: false,
+    [CheckKeys.Negacion]: false,
     [CheckKeys.Listas]: false,
+    [CheckKeys.Operadores]: false,
+
   };
 
   const [checks, setChecks] = useState(checkInitialStatement);
@@ -59,6 +62,9 @@ export const NavBarComponents = () => {
         break;
       case '/listas':
         setChecks({ ...checkInitialStatement, [CheckKeys.Listas]: true });
+        break;
+      case '/negacion':
+        setChecks({ ...checkInitialStatement, [CheckKeys.Negacion]: true });
         break;
 
       default:
@@ -111,6 +117,14 @@ export const NavBarComponents = () => {
         </li>
 
         <li>
+          <ReusableNavLink url="/negacion" filter={checks.negacion} page="Negación" />
+        </li>
+
+        <li>
+          <ReusableNavLink url="/listas" filter={checks.listas} page="Listas" />
+        </li>
+
+        <li>
           <ReusableNavLink
             url="/operadores"
             filter={checks.operadores}
@@ -118,9 +132,7 @@ export const NavBarComponents = () => {
           />
         </li>
 
-        <li>
-          <ReusableNavLink url="/listas" filter={checks.listas} page="Listas" />
-        </li>
+
       </ul>
     </div>
   );

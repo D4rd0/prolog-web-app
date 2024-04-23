@@ -10,6 +10,7 @@ import { Consultas } from './pages/containers/Consultas';
 import { Operadores } from './pages/containers/Operadores';
 import { Listas } from './pages/containers/Listas';
 import { Register } from './pages/containers/Register';
+import { Negacion } from './pages/containers/Negacion';
 
 export const AppRoutes = () => {
   return (
@@ -27,6 +28,7 @@ export const AppRoutes = () => {
               <Route path="/consultas" element={<Consultas />} />
               <Route path="/operadores" element={<Operadores />} />
               <Route path="/listas" element={<Listas />} />
+              <Route path="/negacion" element={<Negacion />} />
               <Route path="/register" element={<Register />} />
             </Routes>
           </NavBar>
