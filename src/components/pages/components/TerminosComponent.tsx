@@ -11,7 +11,7 @@ export const TerminosComponent = () => {
       .catch(error => console.error('Error fetching HTML:', error));
   }, []);
 
-  return <div style={{color:'black'}}>
+  return <div style={{ color: 'black', fontSize: '18px' }}>
     <h1>
       Términos
     </h1>
