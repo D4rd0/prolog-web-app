@@ -15,9 +15,9 @@ export const TerminosComponent = () => {
 </ul>
 <p>&nbsp; &nbsp; &nbsp; &nbsp;Una&nbsp;<strong>variable an&oacute;nima</strong>&nbsp;se representa por el identificador&nbsp;<strong><em>&lsquo;_&rsquo;</em></strong>&nbsp;y se usa com&uacute;nmente cuando no necesitamos hacer referencia a esa variable espec&iacute;fica.</p>
 <ul>
-<li><strong>Estructura:</strong>Es la forma en que se definen t&eacute;rminos m&aacute;s complejos. Su sintaxis es la siguiente:</li>
+<li><strong>Estructura: </strong>Es la forma en que se definen t&eacute;rminos m&aacute;s complejos. Su sintaxis es la siguiente:</li>
 </ul>
 <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&aacute;tomo(t<sub>1</sub>, t<sub>2</sub>, ..., t<sub>n</sub>).</strong></p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp;Donde el &aacute;tomo recibe el nombre de <strong>functor</strong> y t<sub>1</sub>, t<sub>2, </sub>&hellip;, t<sub>n</sub> son a su vez t&eacute;rminos.</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;Por ejemplo, para la estructura persona(juan, 25, ingeniero), "persona" es el functor, y sus t&eacute;rminos son "juan", "25", y "ingeniero". Esta estructura podr&iacute;a representar informaci&oacute;n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sobre una persona, donde "juan" es el nombre, "25" es la edad, y "ingeniero" es su profesi&oacute;n.</p></div>;
+<p>&nbsp; &nbsp; &nbsp; &nbsp;Por ejemplo, para la estructura persona(juan, 25, ingeniero), "persona" es el functor, y sus t&eacute;rminos son "juan", "25", y "ingeniero". Esta estructura podr&iacute;a representar informaci&oacute;n sobre una persona, donde "juan" es el nombre, "25" es la edad, y "ingeniero" es su profesi&oacute;n.</p></div>;
 };

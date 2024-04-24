@@ -5,7 +5,7 @@ export const ConsultasComponent = () => {
   const [htmlContent, setHtmlContent] = useState('');
 
   useEffect(() => {
-    fetch('./demo.html')
+    fetch('./src/components/pages/components/ConsultasComponent.html')
       .then(response => response.text())
       .then(data => setHtmlContent(data))
       .catch(error => console.error('Error fetching HTML:', error));

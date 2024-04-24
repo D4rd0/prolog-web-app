@@ -1,0 +1,30 @@
+
+<body data-feedly-mini="yes">
+<form name="rules" action="javascript:return false;"><p>
+<textarea cols="50" rows="6" name="rules" style="color:black; background-color: #FFFFFF; border: 1px solid #000000; font-family: Arial, sans-serif; font-size: 18px;">
+carnivoro(leon).
+herbivoro(vaca).
+masFuerte(leon, vaca).
+
+come(A, B) :- carnivoro(A), herbivoro(B), masFuerte(A, B).
+</textarea></p>
+</form>
+<form name="input" action="javascript:freeform(); //">
+    <div style="display: flex; align-items: center;">
+        <div style="margin: 0; padding: 0; font-size: 18px; width: 30px; height: 30px; text-align: center; background-color: #808080; color: white; border: 1px solid #000000; font-family: Arial, sans-serif;">?-</div>
+        <div style="margin: 0; padding: 0;">
+            <p style="display: inline-block; margin: 0;">
+                <input type="text" name="query" value="come(leon, B)" size="28" style="color:black; background-color: #FFFFFF; border: 1px solid #000000; font-family: Arial, sans-serif; font-size: 18px; height: 28px; margin: 0;">
+            </p>
+            <p style="display: inline-block; margin: 0;">
+                <input type="button" value="Ejecutar consulta" onclick="run(); return true;" style="background-color: #3498db; color: white; border: 1px solid #000000; font-size: 16px; height: 32px; margin: 0; cursor: pointer;">
+            </p>       
+        </div>
+    </div>     
+</form>
+<form name="output" action="javascript:return false;">
+<p>
+<output rows="2" cols="40" name="output" style="color:black; font-family: Arial, sans-serif; font-size: 18px;" ></output>
+</p>
+</form>
+</body>

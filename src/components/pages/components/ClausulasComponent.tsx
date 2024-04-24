@@ -1,4 +1,16 @@
+import React, { useEffect, useState } from 'react';
+
 export const ClausulasComponent = () => {
+
+  const [htmlContent, setHtmlContent] = useState('');
+
+  useEffect(() => {
+    fetch('./src/components/pages/components/ClausulasComponent.html')
+      .then(response => response.text())
+      .then(data => setHtmlContent(data))
+      .catch(error => console.error('Error fetching HTML:', error));
+  }, []);
+
   return <div style={{color:'black'}}>
     <h1>
       Cláusulas
@@ -13,7 +25,9 @@ export const ClausulasComponent = () => {
 <li>Una cl&aacute;usula que no tiene cabeza y tiene cuerpo se llama <strong>consulta</strong>.</li>
 </ul>
 <p>Un ejemplo de cl&aacute;usula es el siguiente:</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>come(A,B) :-&nbsp;&nbsp; carnivoro(A), herbivoro(B), masFuerte(A, B).</strong></p>
+
+<div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+
 <p>Esta cl&aacute;usula reescrita al lenguaje natural se leer&iacute;a de la siguiente manera:</p>
 <p><em>"A come a B si A es carn&iacute;voro y B es herb&iacute;voro y A es m&aacute;s fuerte que B."</em></p>
   </div>;
