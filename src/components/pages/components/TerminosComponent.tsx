@@ -1,4 +1,16 @@
+import React, { useEffect, useState } from 'react';
+
 export const TerminosComponent = () => {
+
+  const [htmlContent, setHtmlContent] = useState('');
+
+  useEffect(() => {
+    fetch('./src/components/pages/components/TerminosComponent.html')
+      .then(response => response.text())
+      .then(data => setHtmlContent(data))
+      .catch(error => console.error('Error fetching HTML:', error));
+  }, []);
+
   return <div style={{color:'black'}}>
     <h1>
       Términos
@@ -18,6 +30,10 @@ export const TerminosComponent = () => {
 <li><strong>Estructura: </strong>Es la forma en que se definen t&eacute;rminos m&aacute;s complejos. Su sintaxis es la siguiente:</li>
 </ul>
 <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&aacute;tomo(t<sub>1</sub>, t<sub>2</sub>, ..., t<sub>n</sub>).</strong></p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;Donde el &aacute;tomo recibe el nombre de <strong>functor</strong> y t<sub>1</sub>, t<sub>2, </sub>&hellip;, t<sub>n</sub> son a su vez t&eacute;rminos.</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp;Por ejemplo, para la estructura persona(juan, 25, ingeniero), "persona" es el functor, y sus t&eacute;rminos son "juan", "25", y "ingeniero". Esta estructura podr&iacute;a representar informaci&oacute;n sobre una persona, donde "juan" es el nombre, "25" es la edad, y "ingeniero" es su profesi&oacute;n.</p></div>;
+<p>Donde el &aacute;tomo recibe el nombre de <strong>functor</strong> y t<sub>1</sub>, t<sub>2, </sub>&hellip;, t<sub>n</sub> son a su vez t&eacute;rminos.</p>
+<p>Por ejemplo, para la estructura persona(juan, 25, ingeniero), "persona" es el functor, y sus t&eacute;rminos son "juan", "25", y "ingeniero". Esta estructura podr&iacute;a representar informaci&oacute;n sobre una persona, donde "juan" es el nombre, "25" es la edad, y "ingeniero" es su profesi&oacute;n.</p>
+
+<div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+
+</div>;
 };
