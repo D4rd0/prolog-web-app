@@ -177,8 +177,20 @@ export const IntroduccionComponent = () => {
             </h3>
           </div>
         )}
-          <button className="sendInfo" onClick={onSubmit}>
-            Submit
+          <button
+            className="sendInfo"
+            style={{
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: '1px solid #000000',
+              fontSize: '16px',
+              height: '45px',
+              margin: '30px 0 0 0',
+              cursor: 'pointer',
+            }}
+            onClick={onSubmit}
+          >
+            Enviar
           </button>
         </form>
       </section>
