@@ -4,58 +4,42 @@ export const NegacionComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Qué representa la negación por fallo en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) La negación lógica clásica.", radioValue: "q1-a", selected: false },
+        { choice: "b) La verificación de que una cierta condición se cumple.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) La verificación de que una cierta condición no se cumple.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) La inversión del resultado de una consulta.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Qué devuelve el predicado not en Prolog si la condición no se cumple?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Devuelve false.", radioValue: "q2-a", selected: false },
+        { choice: "b) Devuelve true.", radioValue: "q2-b", selected: false },
+        { choice: "c) Devuelve el valor opuesto de la condición.", radioValue: "q2-c", selected: false },
+        { choice: "d) Devuelve una lista vacía.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cómo se utiliza el predicado not en una consulta en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
-      name: "q4-name",
-      options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Se coloca antes de la consulta que se desea negar.", radioValue: "q3-a", selected: false },
+        { choice: "b) Se coloca después de la consulta que se desea negar.", radioValue: "q3-b", selected: false },
+        { choice: "c) Se incluye como parte de la definición del hecho.", radioValue: "q3-c", selected: false },
+        { choice: "d) Se utiliza como un operador dentro de la consulta.", radioValue: "q3-d", selected: false },
       ],
     },
   ];
@@ -64,7 +48,7 @@ export const NegacionComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-c", "q2-b", "q3-a"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

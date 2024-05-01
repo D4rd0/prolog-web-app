@@ -4,58 +4,52 @@ export const OperadoresComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cuál es la función principal de los operadores aritméticos en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Realizar operaciones lógicas entre términos.", radioValue: "q1-a", selected: false },
+        { choice: "b) Comparar expresiones numéricas dentro del código.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Realizar operaciones matriciales.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Establecer relaciones de orden entre términos.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Cuál de los siguientes operadores se utiliza para calcular el resto de la división en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) /", radioValue: "q2-a", selected: false },
+        { choice: "b) //", radioValue: "q2-b", selected: false },
+        { choice: "c) mod", radioValue: "q2-c", selected: false },
+        { choice: "d) %", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cuál es la función principal de los operadores relacionales en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Realizar operaciones aritméticas entre términos.", radioValue: "q3-a", selected: false },
+        { choice: "b) Verificar la igualdad o desigualdad entre términos.", radioValue: "q3-b", selected: false },
+        { choice: "c) Manipular listas de datos.", radioValue: "q3-c", selected: false },
+        { choice: "d) Realizar operaciones de entrada/salida.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Qué hace el operador de corte (!) en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Agrega hechos a la base de conocimiento.", radioValue: "q4-a", selected: false },
+        { choice: "b) Elimina un hecho de la base de conocimiento.", radioValue: "q4-b", selected: false },
+        { choice: "c) Controla el backtracking durante la ejecución.", radioValue: "q4-c", selected: false },
+        { choice: "d) Recopila todas las soluciones válidas de una consulta en una lista.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const OperadoresComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-b", "q2-c", "q3-b", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

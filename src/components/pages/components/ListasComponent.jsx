@@ -4,58 +4,52 @@ export const ListasComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cómo se representa una lista en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Como una secuencia de elementos separados por punto y coma.", radioValue: "q1-a", selected: false },
+        { choice: "b) Como una secuencia de elementos separados por comas y encerrados entre corchetes.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Como una secuencia de elementos separados por espacios y encerrados entre paréntesis.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Como una secuencia de elementos separados por barras verticales y encerrados entre corchetes.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Cómo se define la cabeza de una lista en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Es el último elemento de la lista.", radioValue: "q2-a", selected: false },
+        { choice: "b) Es el primer elemento de la lista.", radioValue: "q2-b", selected: false },
+        { choice: "c) Es una variable que representa la lista entera.", radioValue: "q2-c", selected: false },
+        { choice: "d) Es el elemento que separa la lista en dos partes.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Qué tipo de elementos pueden contener las listas en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Solo números enteros.", radioValue: "q3-a", selected: false },
+        { choice: "b) Solo átomos y variables.", radioValue: "q3-b", selected: false },
+        { choice: "c) Cualquier término válido en Prolog, incluyendo átomos, números, variables, otras listas y estructuras complejas.", radioValue: "q3-c", selected: false },
+        { choice: "d) Solo átomos y otras listas.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Cuál es una aplicación común de las listas en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Realizar operaciones aritméticas complejas.", radioValue: "q4-a", selected: false },
+        { choice: "b) Representar estructuras de datos complejas.", radioValue: "q4-b", selected: false },
+        { choice: "c) Controlar el flujo de ejecución del programa.", radioValue: "q4-c", selected: false },
+        { choice: "d) Manipular archivos de texto.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const ListasComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-b", "q2-b", "q3-c", "q4-b"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {
