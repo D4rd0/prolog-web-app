@@ -4,58 +4,51 @@ export const TerminosComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cuál de las siguientes opciones describe mejor un átomo en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Una estructura compuesta.", radioValue: "q1-a", selected: false },
+        { choice: "b) Un conjunto de números enteros.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Un término que representa un nombre simbólico o constante.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Una expresión que puede ser verdadera o falsa.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Qué es un literal en Prolog según la descripción dada?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Una expresión atómica o compuesta que siempre es verdadera.", radioValue: "q2-a", selected: false },
+        { choice: "b) Una estructura compuesta que contiene solo átomos.", radioValue: "q2-b", selected: false },
+        { choice: "c) Una variable que puede tomar cualquier valor.", radioValue: "q2-c", selected: false },
+        { choice: "d) Una expresión atómica o compuesta que puede ser verdadera o falsa.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cuál es la regla para nombrar variables en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Deben empezar con un número.", radioValue: "q3-a", selected: false },
+        { choice: "b) Deben empezar en minúscula.", radioValue: "q3-b", selected: false },
+        { choice: "c) Deben empezar en mayúscula o con ‘_’.", radioValue: "q3-c", selected: false },
+        { choice: "d) Deben empezar con un símbolo especial.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Cuál es la forma de definir una estructura en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) átomo(t1, t2, ..., tn)", radioValue: "q4-a", selected: false },
+        { choice: "b) t1, t2, ..., tn(átomo)", radioValue: "q4-b", selected: false },
+        { choice: "c) [t1, t2, ..., tn]", radioValue: "q4-c", selected: false },
       ],
     },
   ];
@@ -64,7 +57,7 @@ export const TerminosComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-c", "q2-d", "q3-c", "q4-a"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

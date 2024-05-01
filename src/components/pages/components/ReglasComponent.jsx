@@ -4,58 +4,52 @@ export const ReglasComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cuál es la sintaxis de una regla en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) h -> q1, q2, …, qn", radioValue: "q1-a", selected: false },
+        { choice: "b) h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) h := q1, q2, …, qn",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) h :: q1, q2, …, qn",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Qué representan los literales q1, q2, …, qn en una regla en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Variables que pueden tomar cualquier valor.", radioValue: "q2-a", selected: false },
+        { choice: "b) Condiciones o antecedentes que deben cumplirse para que se cumpla la regla.", radioValue: "q2-b", selected: false },
+        { choice: "c) Afirmaciones verdaderas sin condiciones adicionales.", radioValue: "q2-c", selected: false },
+        { choice: "d) Hechos básicos que establecen relaciones simples.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cuál es el propósito principal de las reglas en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Representar información básica verdadera en el programa.", radioValue: "q3-a", selected: false },
+        { choice: "b) Establecer relaciones entre diferentes predicados mediante condiciones.", radioValue: "q3-b", selected: false },
+        { choice: "c) Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q3-c", selected: false },
+        { choice: "d) Resolver consultas complejas mediante inferencias lógicas.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Qué tipo de regla se llama recursiva en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Aquella que no tiene cuerpo.", radioValue: "q4-a", selected: false },
+        { choice: "b) Aquella que contiene solo variables.", radioValue: "q4-b", selected: false },
+        { choice: "c) Aquella que se llama a sí misma, ya sea directa o indirectamente.", radioValue: "q4-c", selected: false },
+        { choice: "d) Aquella que establece una relación entre diferentes predicados.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const ReglasComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-b", "q2-b", "q3-c", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

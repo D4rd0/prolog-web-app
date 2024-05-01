@@ -4,58 +4,52 @@ export const HechosComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cuál es la definición de un hecho en Prolog según la descripción dada?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Una afirmación que establece una relación verdadera con condiciones adicionales.", radioValue: "q1-a", selected: false },
+        { choice: "b) Una expresión lógica que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Una declaración que establece una relación verdadera sin condiciones adicionales.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Una regla que establece una relación entre dos elementos.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Cuál es la sintaxis de un hecho en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) {t1, t2, …, tn}.", radioValue: "q2-a", selected: false },
+        { choice: "b) b) [t1, t2, …, tn].", radioValue: "q2-b", selected: false },
+        { choice: "c) predicado(t1, t2, …, tn).", radioValue: "q2-c", selected: false },
+        { choice: "d) predicado(t1, t2, …, tn) :- condición.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cuál es el propósito principal de los hechos en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Definir relaciones lógicas entre objetos.", radioValue: "q3-a", selected: false },
+        { choice: "b) Establecer condiciones adicionales para las consultas.", radioValue: "q3-b", selected: false },
+        { choice: "c) Representar información básica verdadera en el programa.", radioValue: "q3-c", selected: false },
+        { choice: "d) Resolver problemas específicos mediante inferencias complejas.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Qué tipo de información pueden representar los hechos en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Solo propiedades de objetos.", radioValue: "q4-a", selected: false },
+        { choice: "b) Solo relaciones entre elementos.", radioValue: "q4-b", selected: false },
+        { choice: "c) Tanto propiedades como relaciones.", radioValue: "q4-c", selected: false },
+        { choice: "d) Únicamente consultas complejas.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const HechosComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-c", "q2-c", "q3-c", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

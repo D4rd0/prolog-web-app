@@ -4,58 +4,52 @@ export const IntroduccionComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "¿Cuál es la principal diferencia entre Prolog y lenguajes de programación convencionales como C++ o Java?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Prolog sigue un paradigma lógico-declarativo.", radioValue: "q1-a", selected: false },
+        { choice: "b) Prolog es un lenguaje compilado.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Prolog es exclusivamente para cálculos numéricos.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Prolog utiliza bucles y condicionales.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Qué aspecto singular destaca en la capacidad de Prolog para resolver problemas?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Utiliza bucles y condicionales.", radioValue: "q2-a", selected: false },
+        { choice: "b) Está basado en la programación imperativa.", radioValue: "q2-b", selected: false },
+        { choice: "c) Su capacidad para resolver problemas a través de la lógica y la inferencia.", radioValue: "q2-c", selected: false },
+        { choice: "d) Provee un alto rendimiento en cálculos numéricos.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "Describe brevemente cómo funciona el proceso de inferencia en Prolog cuando se realiza una consulta.",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Prolog busca en una base de datos SQL.", radioValue: "q3-a", selected: false },
+        { choice: "b) Prolog utiliza algoritmos de aprendizaje automático.", radioValue: "q3-b", selected: false },
+        { choice: "c)  Prolog busca en la base de conocimiento de hechos y reglas para encontrar soluciones.", radioValue: "q3-c", selected: false },
+        { choice: "d) Prolog utiliza la programación orientada a objetos.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Qué es un predicado en Prolog y cómo se define?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Una variable sin valor asignado.", radioValue: "q4-a", selected: false },
+        { choice: "b) Un método de programación funcional.", radioValue: "q4-b", selected: false },
+        { choice: "c) Un conjunto de cláusulas con el mismo nombre en el átomo de la cabeza.", radioValue: "q4-c", selected: false },
+        { choice: "d) Un conjunto de números enteros.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const IntroduccionComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-a", "q2-c", "q3-c", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

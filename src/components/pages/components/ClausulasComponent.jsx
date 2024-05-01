@@ -4,58 +4,52 @@ export const ClausulasComponent = () => {
 
   const data = [
     {
-      questionText: "Angular es definido como:",
+      questionText: "Según la estructura presentada, ¿cómo se define la cabeza de una cláusula en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Framework", radioValue: "q1-a", selected: false },
-        { choice: "b) librería", radioValue: "q1-b", selected: false },
+        { choice: "a) Como una secuencia de literales.", radioValue: "q1-a", selected: false },
+        { choice: "b) Como un hecho.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Lenguage de programación",
+          choice: "c) Como una consulta.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Ninguno de los anterirores",
+          choice: "d) Como un átomo.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿JavaScript es lo mismo que Java?",
+      questionText: "¿Qué tipo de cláusula se denomina como hecho en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Si", radioValue: "q2-a", selected: false },
-        { choice: "b) No", radioValue: "q2-b", selected: false },
-        { choice: "c) Aveces", radioValue: "q2-c", selected: false },
-        { choice: "d) Casi siempre", radioValue: "q2-d", selected: false },
+        { choice: "a) Aquella que tiene cabeza y no tiene cuerpo.", radioValue: "q2-a", selected: false },
+        { choice: "b) Aquella que tiene cabeza y tiene cuerpo.", radioValue: "q2-b", selected: false },
+        { choice: "c) Aquella que no tiene cabeza y tiene cuerpo.", radioValue: "q2-c", selected: false },
+        { choice: "d) Aquella que contiene solo variables.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "Dado el siguiente arreglo: const arr = [10, 30, 44, 80]. ¿Cual de las siguientes opciones nos permite obtener el ultimo elemento del arreglo?",
+        "¿Cómo se llama el tipo de cláusula que tiene cabeza y cuerpo en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) arr[1]", radioValue: "q3-a", selected: false },
-        { choice: "b) arr[arr.length]", radioValue: "q3-b", selected: false },
-        { choice: "c) arr[arr.length - 1]", radioValue: "q3-c", selected: false },
-        { choice: "d) arr.length", radioValue: "q3-d", selected: false },
+        { choice: "a) Hecho.", radioValue: "q3-a", selected: false },
+        { choice: "b) Regla.", radioValue: "q3-b", selected: false },
+        { choice: "c) Consulta.", radioValue: "q3-c", selected: false },
+        { choice: "d) Literal.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Es posible utilzar Redux en aplicaciones de Angular?",
+      questionText: "¿Cuál es el propósito de una cláusula de tipo consulta en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Si", radioValue: "q4-a", selected: false },
-        { choice: "b) No", radioValue: "q4-b", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Ionic esta basado en React?",
-      name: "q5-name",
-      options: [
-        { choice: "a) Si", radioValue: "q5-a", selected: false },
-        { choice: "b) No", radioValue: "q5-b", selected: false },
+        { choice: "a) Definir relaciones entre objetos.", radioValue: "q4-a", selected: false },
+        { choice: "b) Representar información fija en el programa.", radioValue: "q4-b", selected: false },
+        { choice: "c) Responder preguntas o consultas planteadas al programa.", radioValue: "q4-c", selected: false },
+        { choice: "d) Establecer reglas lógicas entre términos.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -64,7 +58,7 @@ export const ClausulasComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-a", "q2-b", "q3-c", "q4-a", "q5-b"];
+  const answers = ["q1-d", "q2-a", "q3-b", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

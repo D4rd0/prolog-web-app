@@ -12,7 +12,7 @@ export const NavBar = (props) => {
       <TopBarComponents />
       <div style={{ display: 'flex', flexDirection: 'row', height: '100%' }}>
         <NavBarComponents />
-        <div style={{ width: '100%' }}>{children}</div>
+        <div style={{ width: '100%', marginLeft: '10px' }}>{children}</div>
       </div>
     </div>
   );
