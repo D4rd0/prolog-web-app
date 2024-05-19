@@ -107,13 +107,22 @@ export const HechosComponent = () => {
 
     const firstInputBox = useRef(null);
     const secondInputBox = useRef(null);
+    const [showingAnswer, setShowingAnswer] = useState(false);
 
-    const showAnswer = () => {
-        firstInputBox.current.innerText = '<a';
-        secondInputBox.current.innerText = '</a>';
-        firstInputBox.current.classList.add('correct');
-        secondInputBox.current.classList.add('correct');
-    };
+    const toggleAnswer = () => {
+      if (showingAnswer) {
+          firstInputBox.current.innerText = '';
+          secondInputBox.current.innerText = '';
+          firstInputBox.current.classList.remove('correct');
+          secondInputBox.current.classList.remove('correct');
+      } else {
+          firstInputBox.current.innerText = '<a';
+          secondInputBox.current.innerText = '</a>';
+          firstInputBox.current.classList.add('correct');
+          secondInputBox.current.classList.add('correct');
+      }
+      setShowingAnswer(!showingAnswer);
+  };
 
     const submitAnswer = () => {
         const firstBox = firstInputBox.current.innerText.trim();
@@ -172,7 +181,7 @@ export const HechosComponent = () => {
               height: '45px',
               margin: '30px 0 0 0',
               cursor: 'pointer',
-            }}onClick={showAnswer}>Mostrar solución</button>
+            }}onClick={toggleAnswer}>{showingAnswer ? 'Ocultar respuesta' : 'Mostrar respuesta'}</button>
 
             </div>
         </div>
