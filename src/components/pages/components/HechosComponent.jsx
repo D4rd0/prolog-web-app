@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import './HechosComponent.css';
 
 export const HechosComponent = () => {
 
@@ -104,6 +105,27 @@ export const HechosComponent = () => {
     }
   }
 
+    const firstInputBox = useRef(null);
+    const secondInputBox = useRef(null);
+
+    const showAnswer = () => {
+        firstInputBox.current.innerText = '<a';
+        secondInputBox.current.innerText = '</a>';
+        firstInputBox.current.classList.add('correct');
+        secondInputBox.current.classList.add('correct');
+    };
+
+    const submitAnswer = () => {
+        const firstBox = firstInputBox.current.innerText.trim();
+        const secondBox = secondInputBox.current.innerText.trim();
+
+        if (firstBox === '<a' && secondBox === '</a>') {
+            alert('Correcto');
+        } else {
+            alert('Incorrecto');
+        }
+    };
+
   return <div style={{ color: 'black', fontSize: '18px' }}>
     <h1>
       Hechos
@@ -122,6 +144,38 @@ export const HechosComponent = () => {
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;padre(antonio, luis).</strong></p>
 <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;edad(jose, 30).</strong></p>
 <p>En conclusi&oacute;n, los hechos en Prolog son fundamentales para construir la base de conocimiento con la cual el programa puede realizar consultas y realizar inferencias l&oacute;gicas. Adem&aacute;s, estos hechos pueden combinarse con reglas y consultas para modelar situaciones m&aacute;s complejas y resolver problemas espec&iacute;ficos.</p>
+
+<div>
+            <h1>Ejercicio</h1>
+            <p>Completa el código que falta:</p>
+            <div>
+                <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
+                <span>href="https://www.w3schools.com"This is a link</span>
+                <span className="input-box" contentEditable="true" ref={secondInputBox}></span>
+            </div>
+
+            <div className="button">
+            <button             style={{
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: '1px solid #000000',
+              fontSize: '16px',
+              height: '45px',
+              margin: '30px 30px 0 0',
+              cursor: 'pointer',
+            }}onClick={submitAnswer}>Enviar respuesta</button>
+              <button             style={{
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: '1px solid #000000',
+              fontSize: '16px',
+              height: '45px',
+              margin: '30px 0 0 0',
+              cursor: 'pointer',
+            }}onClick={showAnswer}>Mostrar solución</button>
+
+            </div>
+        </div>
 
 <div className="container">
       <>

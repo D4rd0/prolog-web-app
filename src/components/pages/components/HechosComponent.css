@@ -1,0 +1,24 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.input-box {
+    width: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.input-box.correct {
+    color: black;
+}
+
+.button {
+    margin-top: 10px;
+}
