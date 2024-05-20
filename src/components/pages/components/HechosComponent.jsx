@@ -106,29 +106,23 @@ export const HechosComponent = () => {
   }
 
     const firstInputBox = useRef(null);
-    const secondInputBox = useRef(null);
     const [showingAnswer, setShowingAnswer] = useState(false);
 
     const toggleAnswer = () => {
       if (showingAnswer) {
           firstInputBox.current.innerText = '';
-          secondInputBox.current.innerText = '';
           firstInputBox.current.classList.remove('correct');
-          secondInputBox.current.classList.remove('correct');
       } else {
-          firstInputBox.current.innerText = '<a';
-          secondInputBox.current.innerText = '</a>';
+          firstInputBox.current.innerText = 'hijo';
           firstInputBox.current.classList.add('correct');
-          secondInputBox.current.classList.add('correct');
       }
       setShowingAnswer(!showingAnswer);
   };
 
     const submitAnswer = () => {
         const firstBox = firstInputBox.current.innerText.trim();
-        const secondBox = secondInputBox.current.innerText.trim();
 
-        if (firstBox === '<a' && secondBox === '</a>') {
+        if (firstBox === 'hijo') {
             alert('Correcto');
         } else {
             alert('Incorrecto');
@@ -158,9 +152,11 @@ export const HechosComponent = () => {
             <h1>Ejercicio</h1>
             <p>Completa el código que falta:</p>
             <div>
+              <span>padre(antonio, luis).</span>
+            </div>
+            <div>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
-                <span>href="https://www.w3schools.com"This is a link</span>
-                <span className="input-box" contentEditable="true" ref={secondInputBox}></span>
+                <span>(luis, antonio).</span>
             </div>
 
             <div className="button">
