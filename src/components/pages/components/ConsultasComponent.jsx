@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 export const ConsultasComponent = () => {
 
@@ -113,6 +113,30 @@ export const ConsultasComponent = () => {
       .catch(error => console.error('Error fetching HTML:', error));
   }, []);
 
+  const firstInputBox = useRef(null);
+  const [showingAnswer, setShowingAnswer] = useState(false);
+
+  const toggleAnswer = () => {
+    if (showingAnswer) {
+        firstInputBox.current.innerText = '';
+        firstInputBox.current.classList.remove('correct');
+    } else {
+        firstInputBox.current.innerText = 'tigre';
+        firstInputBox.current.classList.add('correct');
+    }
+    setShowingAnswer(!showingAnswer);
+};
+
+  const submitAnswer = () => {
+      const firstBox = firstInputBox.current.innerText.trim();
+
+      if (firstBox === 'tigre') {
+          alert('Correcto');
+      } else {
+          alert('Incorrecto');
+      }
+  };
+
   return (
     <div style={{ color: 'black', fontSize: '18px' }}>
       <h1>
@@ -125,6 +149,46 @@ export const ConsultasComponent = () => {
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
 
       <p>Las consultas permiten obtener informaci&oacute;n espec&iacute;fica de la base de conocimiento, realizar verificaciones l&oacute;gicas y explorar las relaciones definidas en el programa. Es mediante las consultas que se interact&uacute;a con el sistema para obtener respuestas l&oacute;gicas basadas en las reglas y hechos previamente establecidos.</p>
+
+      <div>
+            <h1>Ejercicio</h1>
+            <p>Completa el resultado de la siguiente consulta:</p>
+            <div>
+              <span>animal(tigre).</span>
+            </div>
+            <div>
+              <span>humano(juan).</span>
+            </div>
+            <div>
+                <span>?- animal(X)</span>
+            </div>
+            <div>
+                <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
+            </div>
+
+            <div className="button">
+            <button             style={{
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: '1px solid #000000',
+              fontSize: '16px',
+              height: '45px',
+              margin: '30px 30px 0 0',
+              cursor: 'pointer',
+            }}onClick={submitAnswer}>Enviar respuesta</button>
+              <button             style={{
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: '1px solid #000000',
+              fontSize: '16px',
+              height: '45px',
+              margin: '30px 0 0 0',
+              cursor: 'pointer',
+            }}onClick={toggleAnswer}>{showingAnswer ? 'Ocultar respuesta' : 'Mostrar respuesta'}</button>
+
+            </div>
+        </div>
+
 
       <div className="container">
       <>
