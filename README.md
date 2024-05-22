@@ -4,6 +4,9 @@ Este proyecto pretende ayudar a aquellas personas que se adentran por primera ve
 
 Para ello, se aborda el desarrollo de una aplicación web donde los usuarios puedan encontrar un tutorial interactivo que explique los distintos aspectos del lenguaje Prolog acompañados de ejemplos y ejercicios. Además, se hace uso de un intérprete integrado en la aplicación web que permite la ejecución de código en tiempo real.
 
+## Inicio del proyecto
+
+Para iniciar la página web primero hay que ejecutar el comando "npm i" para instalar posibles dependencias del proyecto(es necesario tener instalado npm) y posteriormente para lanzar la web en local ejecutar el comando "npm run dev". Una vez lanzada la web, se puede acceder a ella mediante cualquier navegador web en la dirección local "http://localhost:5173/" de manera predeterminada.
 
 ## Motivación
 
