@@ -1,0 +1,1 @@
+window.isCorrect = 1;

@@ -1,27 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 const navLinkStyle = {
   color: '#707070',
   display: 'flex',
   alignItems: 'center',
 };
 
-const activeNavLinkStyle = {
-  color: '#0070AD',
-  display: 'flex',
-  alignItems: 'center',
-};
-
 const ReusableNavLink = (props) => {
-  const { url, src, filter, page } = props;
+  const { url, src, filter, page, color = '#707070' } = props;
+  const linkStyle = { color, display: 'flex', alignItems: 'center' };
+
   return (
     <NavLink
       to={url}
       style={({ isActive }) => {
         return isActive
-          ? { ...navLinkStyle, ...activeNavLinkStyle }
-          : navLinkStyle;
+          ? { ...linkStyle, fontWeight: 'bold' }
+          : linkStyle;
       }}
     >
       <img
@@ -51,7 +48,7 @@ const ReusableNavLinkAvatar = (props) => {
       to={url}
       style={({ isActive }) => {
         return isActive
-          ? { ...navLinkStyle, ...activeNavLinkStyle }
+          ? { ...navLinkStyle, color: '#0070AD', fontWeight: 'bold' }
           : navLinkStyle;
       }}
     >

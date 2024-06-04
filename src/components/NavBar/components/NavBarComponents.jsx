@@ -15,7 +15,7 @@ export const NavBarComponents = () => {
     Consultas: 'consultas',
     Operadores: 'operadores',
     Listas: 'listas',
-    negacion: 'negacion',
+    Negacion: 'negacion',
   };
 
   const checkInitialStatement = {
@@ -28,7 +28,6 @@ export const NavBarComponents = () => {
     [CheckKeys.Negacion]: false,
     [CheckKeys.Listas]: false,
     [CheckKeys.Operadores]: false,
-
   };
 
   const [checks, setChecks] = useState(checkInitialStatement);
@@ -66,7 +65,6 @@ export const NavBarComponents = () => {
       case '/negacion':
         setChecks({ ...checkInitialStatement, [CheckKeys.Negacion]: true });
         break;
-
       default:
         return;
     }
@@ -78,12 +76,10 @@ export const NavBarComponents = () => {
         <li>
           <ReusableNavLink
             url="/introduccion"
-            //src={NavBarIcons.homeIcon}
             filter={checks.introduccion}
             page="Introducción"
           />
         </li>
-
         <li>
           <ReusableNavLink
             url="/terminos"
@@ -91,7 +87,6 @@ export const NavBarComponents = () => {
             page="Términos"
           />
         </li>
-
         <li>
           <ReusableNavLink
             url="/clausulas"
@@ -99,15 +94,29 @@ export const NavBarComponents = () => {
             page="Cláusulas"
           />
         </li>
-
         <li>
           <ReusableNavLink url="/hechos" filter={checks.hechos} page="Hechos" />
         </li>
-
         <li>
           <ReusableNavLink url="/reglas" filter={checks.reglas} page="Reglas" />
         </li>
-
+        <li className="subcategory">
+          <ReusableNavLink
+            url="/reglas_ejercicio"
+            filter={checks.reglas}
+            page="Ejercicio"
+            color={window.isCorrect === 1 ? 'grey' : window.isCorrect === 2 ? 'green' : window.isCorrect === 3 ? 'red' : 'grey'}  
+            // Cambia el color basado en el valor de window.isCorrect
+          />
+        </li>
+        <li className="subcategory">
+          <ReusableNavLink
+            url="/reglas_cuestionario"
+            filter={checks.reglas}
+            page="Cuestionario"
+            color="red"  // Rojo
+          />
+        </li>
         <li>
           <ReusableNavLink
             url="/consultas"
@@ -115,15 +124,12 @@ export const NavBarComponents = () => {
             page="Consultas"
           />
         </li>
-
         <li>
           <ReusableNavLink url="/negacion" filter={checks.negacion} page="Negación" />
         </li>
-
         <li>
           <ReusableNavLink url="/listas" filter={checks.listas} page="Listas" />
         </li>
-
         <li>
           <ReusableNavLink
             url="/operadores"
@@ -131,8 +137,6 @@ export const NavBarComponents = () => {
             page="Operadores"
           />
         </li>
-
-
       </ul>
     </div>
   );

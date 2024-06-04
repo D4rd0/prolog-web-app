@@ -6,11 +6,13 @@ import { Terminos } from './pages/containers/Terminos';
 import { Clausulas } from './pages/containers/Clausulas';
 import { Hechos } from './pages/containers/Hechos';
 import { Reglas } from './pages/containers/Reglas';
+import ReglasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
 import { Consultas } from './pages/containers/Consultas';
 import { Operadores } from './pages/containers/Operadores';
 import { Listas } from './pages/containers/Listas';
 import { Register } from './pages/containers/Register';
 import { Negacion } from './pages/containers/Negacion';
+
 
 export const AppRoutes = () => {
   return (
@@ -25,6 +27,7 @@ export const AppRoutes = () => {
               <Route path="/clausulas" element={<Clausulas />} />
               <Route path="/hechos" element={<Hechos />} />
               <Route path="/reglas" element={<Reglas />} />
+              <Route path="/reglas_ejercicio" element={<ReglasEjercicioComponent />} />
               <Route path="/consultas" element={<Consultas />} />
               <Route path="/operadores" element={<Operadores />} />
               <Route path="/listas" element={<Listas />} />
