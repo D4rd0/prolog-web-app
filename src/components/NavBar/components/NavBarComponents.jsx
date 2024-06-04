@@ -105,8 +105,7 @@ export const NavBarComponents = () => {
             url="/reglas_ejercicio"
             filter={checks.reglas}
             page="Ejercicio"
-            color={window.isCorrect === 1 ? 'grey' : window.isCorrect === 2 ? 'green' : window.isCorrect === 3 ? 'red' : 'grey'}  
-            // Cambia el color basado en el valor de window.isCorrect
+            color={window.isCorrect === 1 ? 'grey' : window.isCorrect === 2 ? 'green' : window.isCorrect === 3 ? 'red' : 'grey'}
           />
         </li>
         <li className="subcategory">
@@ -114,7 +113,7 @@ export const NavBarComponents = () => {
             url="/reglas_cuestionario"
             filter={checks.reglas}
             page="Cuestionario"
-            color="red"  // Rojo
+            color={window.isCorrect === 1 ? 'grey' : window.isCorrect === 2 ? 'green' : window.isCorrect === 3 ? 'red' : 'grey'}
           />
         </li>
         <li>

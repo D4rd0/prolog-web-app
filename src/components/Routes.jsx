@@ -7,6 +7,7 @@ import { Clausulas } from './pages/containers/Clausulas';
 import { Hechos } from './pages/containers/Hechos';
 import { Reglas } from './pages/containers/Reglas';
 import ReglasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
+import ReglasCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
 import { Consultas } from './pages/containers/Consultas';
 import { Operadores } from './pages/containers/Operadores';
 import { Listas } from './pages/containers/Listas';
@@ -28,6 +29,7 @@ export const AppRoutes = () => {
               <Route path="/hechos" element={<Hechos />} />
               <Route path="/reglas" element={<Reglas />} />
               <Route path="/reglas_ejercicio" element={<ReglasEjercicioComponent />} />
+              <Route path="/reglas_cuestionario" element={<ReglasCuestionarioComponent />} />
               <Route path="/consultas" element={<Consultas />} />
               <Route path="/operadores" element={<Operadores />} />
               <Route path="/listas" element={<Listas />} />
