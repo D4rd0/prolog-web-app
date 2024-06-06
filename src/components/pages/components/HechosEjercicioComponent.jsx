@@ -20,10 +20,10 @@ export const ReglasEjercicioComponent = () => {
 
     if (firstBox === ';') {
         alert('Correcto');
-        window.isCorrectReglasEjercicio = 2;  // Actualiza el estado de respuesta correcta
+        window.isCorrectHechosEjercicio = 2;  // Actualiza el estado de respuesta correcta
     } else {
         alert('Incorrecto');
-        window.isCorrectReglasEjercicio = 3;  // Actualiza el estado de respuesta incorrecta
+        window.isCorrectHechosEjercicio = 3;  // Actualiza el estado de respuesta incorrecta
     }
   };
 

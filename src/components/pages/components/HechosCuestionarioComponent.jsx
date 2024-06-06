@@ -101,9 +101,9 @@ export const ReglasCuestionarioComponent = () => {
             setTotal(counter);
             setSubmitted(true);
             if (counter === answers.length) {
-              window.isCorrectReglasCuestionario = 2; // Todas las respuestas son correctas
+              window.isCorrectHechosCuestionario = 2; // Todas las respuestas son correctas
             } else {
-              window.isCorrectReglasCuestionario = 3;
+              window.isCorrectHechosCuestionario = 3;
             }
 
       }
