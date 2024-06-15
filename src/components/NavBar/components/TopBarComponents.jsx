@@ -27,9 +27,7 @@ export const TopBarComponents = ({ setLoggedInCallback, loggedIn }) => {
   return (
     <div className="top-nav">
       <h2 className="logoImage">
-        <NavLink to="/introduccion" style={{ paddingBottom: '0.313rem' }}>
           <img src={logo} alt="Logo Icon" />
-        </NavLink>
       </h2>
       {loggedIn ? (
         <div className="user-info">
