@@ -21,3 +21,6 @@ window.isCorrectListasCuestionario = 1;
 
 window.isCorrectOperadoresEjercicio = 1;
 window.isCorrectOperadoresCuestionario = 1;
+
+window.isCorrectIntroduccionEjercicio = 1;
+window.isCorrectIntroduccionCuestionario = 1;

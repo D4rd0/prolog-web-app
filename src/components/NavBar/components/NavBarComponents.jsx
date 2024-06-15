@@ -80,6 +80,14 @@ export const NavBarComponents = () => {
             page="Introducción"
           />
         </li>
+        <li className="subcategory">
+          <ReusableNavLink
+            url="/introduccion_cuestionario"
+            filter={checks.introduccion}
+            page="Cuestionario"
+            color={window.isCorrectIntroduccionCuestionario === 1 ? 'grey' : window.isCorrectIntroduccionCuestionario === 2 ? 'green' : window.isCorrectIntroduccionCuestionario === 3 ? 'red' : 'grey'}
+          />
+        </li>
         <li>
           <ReusableNavLink
             url="/terminos"
@@ -87,14 +95,14 @@ export const NavBarComponents = () => {
             page="Términos"
           />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/terminos_ejercicio"
             filter={checks.terminos}
             page="Ejercicio"
             color={window.isCorrectTerminosEjercicio === 1 ? 'grey' : window.isCorrectTerminosEjercicio === 2 ? 'green' : window.isCorrectTerminosEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/terminos_cuestionario"
@@ -209,14 +217,14 @@ export const NavBarComponents = () => {
         <li>
           <ReusableNavLink url="/listas" filter={checks.listas} page="Listas" />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/listas_ejercicio"
             filter={checks.listas}
             page="Ejercicio"
             color={window.isCorrectListasEjercicio === 1 ? 'grey' : window.isCorrectListasEjercicio === 2 ? 'green' : window.isCorrectListasEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/listas_cuestionario"
@@ -232,14 +240,14 @@ export const NavBarComponents = () => {
             page="Operadores"
           />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/operadores_ejercicio"
             filter={checks.operadores}
             page="Ejercicio"
             color={window.isCorrectOperadoresEjercicio === 1 ? 'grey' : window.isCorrectOperadoresEjercicio === 2 ? 'green' : window.isCorrectOperadoresEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/operadores_cuestionario"

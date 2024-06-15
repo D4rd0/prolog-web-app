@@ -7,7 +7,8 @@ import { Clausulas } from './pages/containers/Clausulas';
 import { Hechos } from './pages/containers/Hechos';
 import { Reglas } from './pages/containers/Reglas';
 import TerminosEjercicioComponent from './pages/components/ReglasEjercicioComponent';
-import TerminosCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
+import TerminosCuestionarioComponent from './pages/components/TerminosCuestionarioComponent';
+import IntroduccionCuestionarioComponent from './pages/components/IntroduccionCuestionarioComponent';
 import ClausulasEjercicioComponent from './pages/components/ClausulasEjercicioComponent';
 import ClausulasCuestionarioComponent from './pages/components/ClausulasCuestionarioComponent';
 import HechosEjercicioComponent from './pages/components/HechosEjercicioComponent';
@@ -17,11 +18,11 @@ import ReglasCuestionarioComponent from './pages/components/ReglasCuestionarioCo
 import ConsultasEjercicioComponent from './pages/components/ConsultasEjercicioComponent';
 import ConsultasCuestionarioComponent from './pages/components/ConsultasCuestionarioComponent';
 import OperadoresEjercicioComponent from './pages/components/ReglasEjercicioComponent';
-import OperadoresCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
+import OperadoresCuestionarioComponent from './pages/components/OperadoresCuestionarioComponent';
 import ListasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
-import ListasCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
-import NegacionEjercicioComponent from './pages/components/ReglasEjercicioComponent';
-import NegacionCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
+import ListasCuestionarioComponent from './pages/components/ListasCuestionarioComponent';
+import NegacionEjercicioComponent from './pages/components/NegacionEjercicioComponent';
+import NegacionCuestionarioComponent from './pages/components/NegacionCuestionarioComponent';
 import { Consultas } from './pages/containers/Consultas';
 import { Operadores } from './pages/containers/Operadores';
 import { Listas } from './pages/containers/Listas';
@@ -38,6 +39,7 @@ export const AppRoutes = () => {
           <NavBar>
             <Routes>
               <Route path="/introduccion" element={<Introduccion />} />
+              <Route path="/introduccion_cuestionario" element={<IntroduccionCuestionarioComponent />} />
               <Route path="/terminos" element={<Terminos />} />
               <Route path="/terminos_ejercicio" element={<TerminosEjercicioComponent />} />
               <Route path="/terminos_cuestionario" element={<TerminosCuestionarioComponent />} />
