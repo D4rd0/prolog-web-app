@@ -14,8 +14,8 @@ import HechosEjercicioComponent from './pages/components/HechosEjercicioComponen
 import HechosCuestionarioComponent from './pages/components/HechosCuestionarioComponent';
 import ReglasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
 import ReglasCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
-import ConsultasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
-import ConsultasCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
+import ConsultasEjercicioComponent from './pages/components/ConsultasEjercicioComponent';
+import ConsultasCuestionarioComponent from './pages/components/ConsultasCuestionarioComponent';
 import OperadoresEjercicioComponent from './pages/components/ReglasEjercicioComponent';
 import OperadoresCuestionarioComponent from './pages/components/ReglasCuestionarioComponent';
 import ListasEjercicioComponent from './pages/components/ReglasEjercicioComponent';
