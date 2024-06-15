@@ -1,54 +1,54 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-export const HechosCuestionarioComponent = () => {
+export const ClausulasCuestionarioComponent = () => {
   const data = [
     {
-      questionText: "¿Cuál es la definición de un hecho en Prolog según la descripción dada?",
+      questionText: "Según la estructura presentada, ¿cómo se define la cabeza de una cláusula en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Una afirmación que establece una relación verdadera con condiciones adicionales.", radioValue: "q1-a", selected: false },
-        { choice: "b) Una expresión lógica que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
+        { choice: "a) Como una secuencia de literales.", radioValue: "q1-a", selected: false },
+        { choice: "b) Como un hecho.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Una declaración que establece una relación verdadera sin condiciones adicionales.",
+          choice: "c) Como una consulta.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Una regla que establece una relación entre dos elementos.",
+          choice: "d) Como un átomo.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿Cuál es la sintaxis de un hecho en Prolog?",
+      questionText: "¿Qué tipo de cláusula se denomina como hecho en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) {t1, t2, …, tn}.", radioValue: "q2-a", selected: false },
-        { choice: "b) b) [t1, t2, …, tn].", radioValue: "q2-b", selected: false },
-        { choice: "c) predicado(t1, t2, …, tn).", radioValue: "q2-c", selected: false },
-        { choice: "d) predicado(t1, t2, …, tn) :- condición.", radioValue: "q2-d", selected: false },
+        { choice: "a) Aquella que tiene cabeza y no tiene cuerpo.", radioValue: "q2-a", selected: false },
+        { choice: "b) Aquella que tiene cabeza y tiene cuerpo.", radioValue: "q2-b", selected: false },
+        { choice: "c) Aquella que no tiene cabeza y tiene cuerpo.", radioValue: "q2-c", selected: false },
+        { choice: "d) Aquella que contiene solo variables.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText:
-        "¿Cuál es el propósito principal de los hechos en Prolog?",
+        "¿Cómo se llama el tipo de cláusula que tiene cabeza y cuerpo en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) Definir relaciones lógicas entre objetos.", radioValue: "q3-a", selected: false },
-        { choice: "b) Establecer condiciones adicionales para las consultas.", radioValue: "q3-b", selected: false },
-        { choice: "c) Representar información básica verdadera en el programa.", radioValue: "q3-c", selected: false },
-        { choice: "d) Resolver problemas específicos mediante inferencias complejas.", radioValue: "q3-d", selected: false },
+        { choice: "a) Hecho.", radioValue: "q3-a", selected: false },
+        { choice: "b) Regla.", radioValue: "q3-b", selected: false },
+        { choice: "c) Consulta.", radioValue: "q3-c", selected: false },
+        { choice: "d) Literal.", radioValue: "q3-d", selected: false },
       ],
     },
     {
-      questionText: "¿Qué tipo de información pueden representar los hechos en Prolog?",
+      questionText: "¿Cuál es el propósito de una cláusula de tipo consulta en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Solo propiedades de objetos.", radioValue: "q4-a", selected: false },
-        { choice: "b) Solo relaciones entre elementos.", radioValue: "q4-b", selected: false },
-        { choice: "c) Tanto propiedades como relaciones.", radioValue: "q4-c", selected: false },
-        { choice: "d) Únicamente consultas complejas.", radioValue: "q4-d", selected: false },
+        { choice: "a) Definir relaciones entre objetos.", radioValue: "q4-a", selected: false },
+        { choice: "b) Representar información fija en el programa.", radioValue: "q4-b", selected: false },
+        { choice: "c) Responder preguntas o consultas planteadas al programa.", radioValue: "q4-c", selected: false },
+        { choice: "d) Establecer reglas lógicas entre términos.", radioValue: "q4-d", selected: false },
       ],
     },
   ];
@@ -57,7 +57,7 @@ export const HechosCuestionarioComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-c", "q2-c", "q3-c", "q4-c"];
+  const answers = ["q1-d", "q2-a", "q3-b", "q4-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {
@@ -101,9 +101,9 @@ export const HechosCuestionarioComponent = () => {
             setTotal(counter);
             setSubmitted(true);
             if (counter === answers.length) {
-              window.isCorrectHechosCuestionario = 2; // Todas las respuestas son correctas
+              window.isCorrectClausulasCuestionario = 2; // Todas las respuestas son correctas
             } else {
-              window.isCorrectHechosCuestionario = 3;
+              window.isCorrectClausulasCuestionario = 3;
             }
 
       }
@@ -166,4 +166,4 @@ export const HechosCuestionarioComponent = () => {
     </div>
     </div>
 };
-export default HechosCuestionarioComponent;
+export default ClausulasCuestionarioComponent;

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 
-export const HechosEjercicioComponent = () => {
+export const ClausulasEjercicioComponent = () => {
+
   const firstInputBox = useRef(null);
   const [showingAnswer, setShowingAnswer] = useState(false);
 
@@ -9,7 +10,7 @@ export const HechosEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = 'hijo';
+        firstInputBox.current.innerText = 'vuela';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -18,12 +19,12 @@ export const HechosEjercicioComponent = () => {
   const submitAnswer = () => {
       const firstBox = firstInputBox.current.innerText.trim();
 
-      if (firstBox === 'hijo') {
+      if (firstBox === 'vuela') {
           alert('Correcto');
-          window.isCorrectHechosEjercicio = 2; 
+          window.isCorrectClausulasEjercicio = 2; 
       } else {
           alert('Incorrecto');
-          window.isCorrectHechosEjercicio = 3; 
+          window.isCorrectClausulasEjercicio = 2; 
       }
   };
 
@@ -32,11 +33,15 @@ export const HechosEjercicioComponent = () => {
             <h1>Ejercicio</h1>
             <p>Completa el código que falta:</p>
             <div>
-              <span>padre(antonio, luis).</span>
+              <span>tiene(cuervo, plumas).</span>
             </div>
             <div>
+              <span>vuela(cuervo).</span>
+            </div>
+            <div>
+                <span>ave(X) :- tiene(X, plumas), </span>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
-                <span>(luis, antonio).</span>
+                <span>(cuervo).</span>
             </div>
 
             <div className="button">
@@ -64,4 +69,4 @@ export const HechosEjercicioComponent = () => {
     </div>
 };
 
-export default HechosEjercicioComponent;
+export default ClausulasEjercicioComponent;
