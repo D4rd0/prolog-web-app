@@ -23,7 +23,7 @@ export const ReglasEjercicioComponent = () => {
           window.isCorrectNegacionEjercicio = 2;
       } else {
           alert('Incorrecto');
-          window.isCorrectNegacionEjercicio = 2;
+          window.isCorrectNegacionEjercicio = 3;
       }
   };
 

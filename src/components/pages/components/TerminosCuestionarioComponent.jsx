@@ -28,7 +28,7 @@ export const TerminosCuestionarioComponent = () => {
         { choice: "a) Una expresión atómica o compuesta que siempre es verdadera.", radioValue: "q2-a", selected: false },
         { choice: "b) Una estructura compuesta que contiene solo átomos.", radioValue: "q2-b", selected: false },
         { choice: "c) Una variable que puede tomar cualquier valor.", radioValue: "q2-c", selected: false },
-        { choice: "d) Una expresión atómica o compuesta que puede ser verdadera o falsa.", radioValue: "q2-d", selected: false },
+        { choice: "d) Una expresión de una lista.", radioValue: "q2-d", selected: false },
       ],
     },
     {

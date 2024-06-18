@@ -10,7 +10,7 @@ export const ClausulasEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = 'vuela';
+        firstInputBox.current.innerText = 'a';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -19,29 +19,41 @@ export const ClausulasEjercicioComponent = () => {
   const submitAnswer = () => {
       const firstBox = firstInputBox.current.innerText.trim();
 
-      if (firstBox === 'vuela') {
+      if (firstBox === 'a') {
           alert('Correcto');
           window.isCorrectClausulasEjercicio = 2; 
       } else {
           alert('Incorrecto');
-          window.isCorrectClausulasEjercicio = 2; 
+          window.isCorrectClausulasEjercicio = 3; 
       }
   };
 
   return <div style={{ color: 'black', fontSize: '18px' }}>
       <div>
             <h1>Ejercicio</h1>
-            <p>Completa el código que falta:</p>
+            <p>Dado el siguiente programa lógico:</p>
             <div>
-              <span>tiene(cuervo, plumas).</span>
+              <span>p(X):- s(X),r(X).</span>
             </div>
             <div>
-              <span>vuela(cuervo).</span>
+              <span>s(a).</span>
             </div>
             <div>
-                <span>ave(X) :- tiene(X, plumas), </span>
+              <span>s(x).</span>
+            </div>
+            <div>
+              <span>r(a).</span>
+            </div>
+            <div>
+              <span>r(b).</span>
+            </div>
+            <div>
+              <span>r(c).</span>
+            </div>
+            <p>¿Cuáles son TODAS las respuestas computadas para el objetivo <b>?- p(X).</b> usando la estrategia de búsqueda predefinida de Prolog?</p>
+            <div>
+                <span>X = </span>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
-                <span>(cuervo).</span>
             </div>
 
             <div className="button">

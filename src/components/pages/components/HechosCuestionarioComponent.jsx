@@ -6,8 +6,8 @@ export const HechosCuestionarioComponent = () => {
       questionText: "¿Cuál es la definición de un hecho en Prolog según la descripción dada?",
       name: "q1-name",
       options: [
-        { choice: "a) Una afirmación que establece una relación verdadera con condiciones adicionales.", radioValue: "q1-a", selected: false },
-        { choice: "b) Una expresión lógica que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
+        { choice: "a) Una negación de un término.", radioValue: "q1-a", selected: false },
+        { choice: "b) Una consulta que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
         {
           choice: "c) Una declaración que establece una relación verdadera sin condiciones adicionales.",
           radioValue: "q1-c",
@@ -35,7 +35,7 @@ export const HechosCuestionarioComponent = () => {
         "¿Cuál es el propósito principal de los hechos en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) Definir relaciones lógicas entre objetos.", radioValue: "q3-a", selected: false },
+        { choice: "a) Definir sublistas de listas de objetos.", radioValue: "q3-a", selected: false },
         { choice: "b) Establecer condiciones adicionales para las consultas.", radioValue: "q3-b", selected: false },
         { choice: "c) Representar información básica verdadera en el programa.", radioValue: "q3-c", selected: false },
         { choice: "d) Resolver problemas específicos mediante inferencias complejas.", radioValue: "q3-d", selected: false },
@@ -45,8 +45,8 @@ export const HechosCuestionarioComponent = () => {
       questionText: "¿Qué tipo de información pueden representar los hechos en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Solo propiedades de objetos.", radioValue: "q4-a", selected: false },
-        { choice: "b) Solo relaciones entre elementos.", radioValue: "q4-b", selected: false },
+        { choice: "a) Listas de objetos.", radioValue: "q4-a", selected: false },
+        { choice: "b) Operadores de listas.", radioValue: "q4-b", selected: false },
         { choice: "c) Tanto propiedades como relaciones.", radioValue: "q4-c", selected: false },
         { choice: "d) Únicamente consultas complejas.", radioValue: "q4-d", selected: false },
       ],

@@ -7,7 +7,7 @@ export const ClausulasCuestionarioComponent = () => {
       name: "q1-name",
       options: [
         { choice: "a) Como una secuencia de literales.", radioValue: "q1-a", selected: false },
-        { choice: "b) Como un hecho.", radioValue: "q1-b", selected: false },
+        { choice: "b) Como una lista.", radioValue: "q1-b", selected: false },
         {
           choice: "c) Como una consulta.",
           radioValue: "q1-c",
@@ -38,7 +38,7 @@ export const ClausulasCuestionarioComponent = () => {
         { choice: "a) Hecho.", radioValue: "q3-a", selected: false },
         { choice: "b) Regla.", radioValue: "q3-b", selected: false },
         { choice: "c) Consulta.", radioValue: "q3-c", selected: false },
-        { choice: "d) Literal.", radioValue: "q3-d", selected: false },
+        { choice: "d) Átomo.", radioValue: "q3-d", selected: false },
       ],
     },
     {
@@ -48,7 +48,7 @@ export const ClausulasCuestionarioComponent = () => {
         { choice: "a) Definir relaciones entre objetos.", radioValue: "q4-a", selected: false },
         { choice: "b) Representar información fija en el programa.", radioValue: "q4-b", selected: false },
         { choice: "c) Responder preguntas o consultas planteadas al programa.", radioValue: "q4-c", selected: false },
-        { choice: "d) Establecer reglas lógicas entre términos.", radioValue: "q4-d", selected: false },
+        { choice: "d) Definir una lista de términos.", radioValue: "q4-d", selected: false },
       ],
     },
   ];

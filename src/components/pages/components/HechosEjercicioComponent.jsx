@@ -9,7 +9,7 @@ export const HechosEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = 'hijo';
+        firstInputBox.current.innerText = 'pescar';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -18,7 +18,7 @@ export const HechosEjercicioComponent = () => {
   const submitAnswer = () => {
       const firstBox = firstInputBox.current.innerText.trim();
 
-      if (firstBox === 'hijo') {
+      if (firstBox === 'pescar') {
           alert('Correcto');
           window.isCorrectHechosEjercicio = 2; 
       } else {
@@ -30,13 +30,19 @@ export const HechosEjercicioComponent = () => {
   return <div style={{ color: 'black', fontSize: '18px' }}>
       <div>
             <h1>Ejercicio</h1>
-            <p>Completa el código que falta:</p>
+            <p>Dado el siguiente programa:</p>
             <div>
-              <span>padre(antonio, luis).</span>
+              <span>legusta(pepe,cantar).</span>
             </div>
             <div>
+              <span>legusta(maria,bailar).</span>
+            </div>
+            <div>
+              <span>legusta(ana,pescar).</span>
+            </div>
+            <p>¿Qué es lo que le gusta a ana?</p>
+            <div>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
-                <span>(luis, antonio).</span>
             </div>
 
             <div className="button">

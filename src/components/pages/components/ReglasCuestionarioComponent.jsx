@@ -6,10 +6,10 @@ export const ReglasCuestionarioComponent = () => {
           questionText: "¿Cuál es la sintaxis de una regla en Prolog?",
           name: "q1-name",
           options: [
-            { choice: "a) h -> q1, q2, …, qn", radioValue: "q1-a", selected: false },
+            { choice: "a) h ?- q1, q2, …, qn", radioValue: "q1-a", selected: false },
             { choice: "b) h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
             {
-              choice: "c) h := q1, q2, …, qn",
+              choice: "c) h | q1, q2, …, qn",
               radioValue: "q1-c",
               selected: false,
             },
@@ -21,13 +21,13 @@ export const ReglasCuestionarioComponent = () => {
           ],
         },
         {
-          questionText: "¿Qué representan los literales q1, q2, …, qn en una regla en Prolog?",
+          questionText: "Indica cuál de los siguientes predicados podría utilizarse para calcular la media aritmética de dos números:",
           name: "q2-name",
           options: [
-            { choice: "a) Variables que pueden tomar cualquier valor.", radioValue: "q2-a", selected: false },
-            { choice: "b) Condiciones o antecedentes que deben cumplirse para que se cumpla la regla.", radioValue: "q2-b", selected: false },
-            { choice: "c) Afirmaciones verdaderas sin condiciones adicionales.", radioValue: "q2-c", selected: false },
-            { choice: "d) Hechos básicos que establecen relaciones simples.", radioValue: "q2-d", selected: false },
+            { choice: "a) media(X,Y):- (X + Y) / 2.", radioValue: "q2-a", selected: false },
+            { choice: "b) media(X,Y,Z):- Z is (X + Y) / 2.", radioValue: "q2-b", selected: false },
+            { choice: "c) media(X,Y,Z):- Z = (X + Y) / 2.", radioValue: "q2-c", selected: false },
+            { choice: "d) media(X,Y) = Y is (X + Y) / 2.", radioValue: "q2-d", selected: false },
           ],
         },
         {
@@ -36,7 +36,7 @@ export const ReglasCuestionarioComponent = () => {
           name: "q3-name",
           options: [
             { choice: "a) Representar información básica verdadera en el programa.", radioValue: "q3-a", selected: false },
-            { choice: "b) Establecer relaciones entre diferentes predicados mediante condiciones.", radioValue: "q3-b", selected: false },
+            { choice: "b) Establecer relaciones entre diferentes listas mediante condiciones.", radioValue: "q3-b", selected: false },
             { choice: "c) Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q3-c", selected: false },
             { choice: "d) Resolver consultas complejas mediante inferencias lógicas.", radioValue: "q3-d", selected: false },
           ],
