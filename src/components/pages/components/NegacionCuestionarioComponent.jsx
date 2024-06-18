@@ -38,7 +38,7 @@ export const NegacionCuestionarioComponent = () => {
         { choice: "a) Se coloca antes de la consulta que se desea negar.", radioValue: "q3-a", selected: false },
         { choice: "b) Se coloca después de la consulta que se desea negar.", radioValue: "q3-b", selected: false },
         { choice: "c) Se incluye como parte de la definición del hecho.", radioValue: "q3-c", selected: false },
-        { choice: "d) Se utiliza como un operador dentro de la consulta.", radioValue: "q3-d", selected: false },
+        { choice: "d) Se utiliza como un operador dentro de una regla.", radioValue: "q3-d", selected: false },
       ],
     },
   ];

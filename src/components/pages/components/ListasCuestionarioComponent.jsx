@@ -14,7 +14,7 @@ export const ListasCuestionarioComponent = () => {
           selected: false,
         },
         {
-          choice: "d) Como una secuencia de elementos separados por barras verticales y encerrados entre corchetes.",
+          choice: "d) Como una secuencia de elementos separados por barras verticales y encerrados entre paréntesis.",
           radioValue: "q1-d",
           selected: false,
         },

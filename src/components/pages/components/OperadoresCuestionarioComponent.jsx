@@ -7,9 +7,9 @@ export const ListasCuestionarioComponent = () => {
       name: "q1-name",
       options: [
         { choice: "a) Realizar operaciones lógicas entre términos.", radioValue: "q1-a", selected: false },
-        { choice: "b) Comparar expresiones numéricas dentro del código.", radioValue: "q1-b", selected: false },
+        { choice: "b) Realizar operaciones aritméticas entre términos.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Realizar operaciones matriciales.",
+          choice: "c) Realizar operaciones entre listas.",
           radioValue: "q1-c",
           selected: false,
         },

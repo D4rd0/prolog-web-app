@@ -9,7 +9,7 @@ export const ReglasEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = ';';
+        firstInputBox.current.innerText = 'fact(Z,V)';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -18,7 +18,7 @@ export const ReglasEjercicioComponent = () => {
   const submitAnswer = () => {
     const firstBox = firstInputBox.current.innerText.trim();
 
-    if (firstBox === ';') {
+    if (firstBox === 'fact(Z,V)') {
         alert('Correcto');
         window.isCorrectReglasEjercicio = 2;  // Actualiza el estado de respuesta correcta
     } else {
@@ -30,11 +30,14 @@ export const ReglasEjercicioComponent = () => {
   return <div style={{ color: 'black', fontSize: '18px' }}>
       <div>
         <h1>Ejercicio</h1>
-        <p>Completa el código que falta:</p>
+        <p>Completar el siguiente programa Prolog para calcular el factorial de un número:</p>
         <div>
-          <span>tiene_mascota(X) :- humano(X), (tiene_gato(X)</span>
+          <div>
+          <span>fact(1,1).</span>
+          </div>
+          <span>fact(X,Y) :- Z is X-1, </span>
           <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
-          <span>tiene_perro(X)).</span>
+          <span>, Y is X*V.</span>
         </div>
         <div className="button">
           <button

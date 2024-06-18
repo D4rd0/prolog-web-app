@@ -10,7 +10,7 @@ export const ConsultasEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = 'tigre';
+        firstInputBox.current.innerText = 'a';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -19,7 +19,7 @@ export const ConsultasEjercicioComponent = () => {
   const submitAnswer = () => {
       const firstBox = firstInputBox.current.innerText.trim();
 
-      if (firstBox === 'tigre') {
+      if (firstBox === 'a') {
           alert('Correcto');
           window.isCorrectConsultasEjercicio = 2; 
       } else {
@@ -30,20 +30,32 @@ export const ConsultasEjercicioComponent = () => {
 
   return <div style={{ color: 'black', fontSize: '18px' }}>
       <div>
-            <h1>Ejercicio</h1>
-            <p>Completa el resultado de la siguiente consulta:</p>
+      <h1>Ejercicio</h1>
+            <p>Dado el siguiente programa lógico:</p>
             <div>
-              <span>animal(tigre).</span>
+              <span>p(X):- s(X),r(X).</span>
             </div>
             <div>
-              <span>humano(juan).</span>
+              <span>s(a).</span>
             </div>
             <div>
-                <span>?- animal(X)</span>
+              <span>s(x).</span>
             </div>
             <div>
+              <span>r(a).</span>
+            </div>
+            <div>
+              <span>r(b).</span>
+            </div>
+            <div>
+              <span>r(c).</span>
+            </div>
+            <p>¿Cuáles son TODAS las respuestas computadas para el objetivo <b>?- p(X).</b> usando la estrategia de búsqueda predefinida de Prolog?</p>
+            <div>
+                <span>X = </span>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
             </div>
+
 
             <div className="button">
             <button             style={{
