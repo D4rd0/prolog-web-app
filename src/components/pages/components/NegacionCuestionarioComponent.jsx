@@ -3,42 +3,24 @@ import React, { useEffect, useState, useRef } from 'react';
 export const NegacionCuestionarioComponent = () => {
   const data = [
     {
-      questionText: "¿Qué representa la negación por fallo en Prolog?",
+      questionText: "¿Qué devuelve la negación por fallo en Prolog si la condición no se cumple?",
       name: "q1-name",
       options: [
-        { choice: "a) La negación lógica clásica.", radioValue: "q1-a", selected: false },
-        { choice: "b) La verificación de que una cierta condición se cumple.", radioValue: "q1-b", selected: false },
-        {
-          choice: "c) La verificación de que una cierta condición no se cumple.",
-          radioValue: "q1-c",
-          selected: false,
-        },
-        {
-          choice: "d) La inversión del resultado de una consulta.",
-          radioValue: "q1-d",
-          selected: false,
-        },
-      ],
-    },
-    {
-      questionText: "¿Qué devuelve el predicado not en Prolog si la condición no se cumple?",
-      name: "q2-name",
-      options: [
-        { choice: "a) Devuelve false.", radioValue: "q2-a", selected: false },
-        { choice: "b) Devuelve true.", radioValue: "q2-b", selected: false },
-        { choice: "c) Devuelve el valor opuesto de la condición.", radioValue: "q2-c", selected: false },
-        { choice: "d) Devuelve una lista vacía.", radioValue: "q2-d", selected: false },
+        { choice: "Devuelve false.", radioValue: "q1-a", selected: false },
+        { choice: "Devuelve true.", radioValue: "q1-b", selected: false },
+        { choice: "Devuelve el valor opuesto de la condición.", radioValue: "q1-c", selected: false },
+        { choice: "Devuelve una lista vacía.", radioValue: "q1-d", selected: false },
       ],
     },
     {
       questionText:
         "¿Cómo se utiliza el predicado not en una consulta en Prolog?",
-      name: "q3-name",
+      name: "q2-name",
       options: [
-        { choice: "a) Se coloca antes de la consulta que se desea negar.", radioValue: "q3-a", selected: false },
-        { choice: "b) Se coloca después de la consulta que se desea negar.", radioValue: "q3-b", selected: false },
-        { choice: "c) Se incluye como parte de la definición del hecho.", radioValue: "q3-c", selected: false },
-        { choice: "d) Se utiliza como un operador dentro de una regla.", radioValue: "q3-d", selected: false },
+        { choice: "Se coloca antes de la consulta que se desea negar.", radioValue: "q2-a", selected: false },
+        { choice: "Se coloca después de la consulta que se desea negar.", radioValue: "q2-b", selected: false },
+        { choice: "Se incluye como parte de la definición del hecho.", radioValue: "q2-c", selected: false },
+        { choice: "Se utiliza como un operador dentro de una regla.", radioValue: "q2-d", selected: false },
       ],
     },
   ];
@@ -47,7 +29,7 @@ export const NegacionCuestionarioComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-c", "q2-b", "q3-a"];
+  const answers = ["q1-b", "q2-a"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

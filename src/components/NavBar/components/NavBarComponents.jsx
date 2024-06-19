@@ -180,14 +180,14 @@ export const NavBarComponents = () => {
             page="Consultas"
           />
         </li>
-        {/* <li className="subcategory">
+        <li className="subcategory">
           <ReusableNavLink
             url="/consultas_ejercicio"
             filter={checks.consultas}
             page="Ejercicio"
             color={window.isCorrectConsultasEjercicio === 1 ? 'grey' : window.isCorrectConsultasEjercicio === 2 ? 'green' : window.isCorrectConsultasEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li> */}
+        </li>
         <li className="subcategory">
           <ReusableNavLink
             url="/consultas_cuestionario"
@@ -207,14 +207,14 @@ export const NavBarComponents = () => {
             color={window.isCorrectNegacionEjercicio === 1 ? 'grey' : window.isCorrectNegacionEjercicio === 2 ? 'green' : window.isCorrectNegacionEjercicio === 3 ? 'red' : 'grey'}
           />
         </li> */}
-        {/* <li className="subcategory">
+        <li className="subcategory">
           <ReusableNavLink
             url="/negacion_cuestionario"
             filter={checks.negacion}
             page="Cuestionario"
             color={window.isCorrectNegacionCuestionario === 1 ? 'grey' : window.isCorrectNegacionCuestionario === 2 ? 'green' : window.isCorrectNegacionCuestionario === 3 ? 'red' : 'grey'}
           />
-        </li> */}
+        </li>
         <li>
           <ReusableNavLink url="/listas" filter={checks.listas} page="Listas" />
         </li>
