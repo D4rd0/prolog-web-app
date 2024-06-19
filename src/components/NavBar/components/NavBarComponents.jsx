@@ -111,29 +111,7 @@ export const NavBarComponents = () => {
             color={window.isCorrectTerminosCuestionario === 1 ? 'grey' : window.isCorrectTerminosCuestionario === 2 ? 'green' : window.isCorrectTerminosCuestionario === 3 ? 'red' : 'grey'}
           />
         </li>
-        <li>
-          <ReusableNavLink
-            url="/clausulas"
-            filter={checks.clausulas}
-            page="Cláusulas"
-          />
-        </li>
-        {/* <li className="subcategory">
-          <ReusableNavLink
-            url="/clausulas_ejercicio"
-            filter={checks.clausulas}
-            page="Ejercicio"
-            color={window.isCorrectClausulasEjercicio === 1 ? 'grey' : window.isCorrectClausulasEjercicio === 2 ? 'green' : window.isCorrectClausulasEjercicio === 3 ? 'red' : 'grey'}
-          />
-        </li> */}
-        <li className="subcategory">
-          <ReusableNavLink
-            url="/clausulas_cuestionario"
-            filter={checks.clausulas}
-            page="Cuestionario"
-            color={window.isCorrectClausulasCuestionario === 1 ? 'grey' : window.isCorrectClausulasCuestionario === 2 ? 'green' : window.isCorrectClausulasCuestionario === 3 ? 'red' : 'grey'}
-          />
-        </li>
+
         <li>
           <ReusableNavLink url="/hechos" filter={checks.hechos} page="Hechos" />
         </li>
@@ -170,6 +148,29 @@ export const NavBarComponents = () => {
             filter={checks.reglas}
             page="Cuestionario"
             color={window.isCorrectReglasCuestionario === 1 ? 'grey' : window.isCorrectReglasCuestionario === 2 ? 'green' : window.isCorrectReglasCuestionario === 3 ? 'red' : 'grey'}
+          />
+        </li>
+        <li>
+          <ReusableNavLink
+            url="/clausulas"
+            filter={checks.clausulas}
+            page="Cláusulas"
+          />
+        </li>
+        {/* <li className="subcategory">
+          <ReusableNavLink
+            url="/clausulas_ejercicio"
+            filter={checks.clausulas}
+            page="Ejercicio"
+            color={window.isCorrectClausulasEjercicio === 1 ? 'grey' : window.isCorrectClausulasEjercicio === 2 ? 'green' : window.isCorrectClausulasEjercicio === 3 ? 'red' : 'grey'}
+          />
+        </li> */}
+        <li className="subcategory">
+          <ReusableNavLink
+            url="/clausulas_cuestionario"
+            filter={checks.clausulas}
+            page="Cuestionario"
+            color={window.isCorrectClausulasCuestionario === 1 ? 'grey' : window.isCorrectClausulasCuestionario === 2 ? 'green' : window.isCorrectClausulasCuestionario === 3 ? 'red' : 'grey'}
           />
         </li>
         <li>
