@@ -30,6 +30,23 @@ export const ListasComponent = () => {
  
     Las listas son una herramienta muy útil en Prolog y se utilizan ampliamente en la manipulación de datos, la representación de estructuras de datos y la implementación de algoritmos.
     </p>
-  
+
+    <p>
+    Un ejemplo de definición recursiva de una lista es el siguiente:
+    </p>
+
+    <b>
+    <p>
+    es_lista([]).
+    </p>
+    <p>
+    es_lista([Cabeza|Cola]) :- es_lista(Cola).
+    </p>
+    </b>
+
+    <p>
+    En este código, la primera regla define que una lista vacía es una lista, mientras que la segunda regla define que una lista con un primer elemento (Cabeza) seguido de una cola es una lista si la cola también es una lista.
+    </p>
+
   </div>;
 };
