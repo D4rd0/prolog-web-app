@@ -6,15 +6,15 @@ export const ConsultasCuestionarioComponent = () => {
       questionText: "¿Cuál es la sintaxis de una consulta en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) h -> q1, q2, …, qn", radioValue: "q1-a", selected: false },
-        { choice: "b) h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
+        { choice: "h -> q1, q2, …, qn", radioValue: "q1-a", selected: false },
+        { choice: "h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
         {
-          choice: "c) ?- q1, q2, …, qn",
+          choice: "?- q1, q2, …, qn",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) !- h(q1, q2, …, qn)",
+          choice: "!- h(q1, q2, …, qn)",
           radioValue: "q1-d",
           selected: false,
         },
@@ -24,31 +24,20 @@ export const ConsultasCuestionarioComponent = () => {
       questionText: "¿Cuál es el propósito principal de las consultas en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q2-a", selected: false },
-        { choice: "b) Establecer relaciones entre diferentes predicados mediante condiciones.", radioValue: "q2-b", selected: false },
-        { choice: "c) Obtener información específica de la base de conocimiento y realizar verificaciones lógicas.", radioValue: "q2-c", selected: false },
-        { choice: "d) Representar información básica del programa.", radioValue: "q2-d", selected: false },
-      ],
-    },
-    {
-      questionText:
-        "¿Cómo responde Prolog a una consulta?",
-      name: "q3-name",
-      options: [
-        { choice: "a) Devolviendo una lista de hechos que coinciden con la consulta.", radioValue: "q3-a", selected: false },
-        { choice: "b) Devolviendo un valor numérico que satisface la consulta.", radioValue: "q3-b", selected: false },
-        { choice: "c) Retornando true o false según si la consulta es verdadera o falsa.", radioValue: "q3-c", selected: false },
-        { choice: "d) Todas las afirmaciones son ciertas.", radioValue: "q3-d", selected: false },
+        { choice: "Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q2-a", selected: false },
+        { choice: "Establecer relaciones entre diferentes predicados mediante condiciones.", radioValue: "q2-b", selected: false },
+        { choice: "Obtener información específica de la base de conocimiento y realizar verificaciones lógicas.", radioValue: "q2-c", selected: false },
+        { choice: "Representar información básica del programa.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText: "¿Qué tipo de información se puede obtener mediante consultas en Prolog?",
-      name: "q4-name",
+      name: "q3-name",
       options: [
-        { choice: "a) Únicamente información sobre listas.", radioValue: "q4-a", selected: false },
-        { choice: "b) Solo información específica sobre reglas en el programa.", radioValue: "q4-b", selected: false },
-        { choice: "c) Información específica de la base de conocimiento y verificaciones lógicas.", radioValue: "q4-c", selected: false },
-        { choice: "d) Información sobre la estructura interna del programa.", radioValue: "q4-d", selected: false },
+        { choice: "Únicamente información sobre listas.", radioValue: "q3-a", selected: false },
+        { choice: "Solo información específica sobre reglas en el programa.", radioValue: "q3-b", selected: false },
+        { choice: "Información específica de la base de conocimiento y verificaciones lógicas.", radioValue: "q3-c", selected: false },
+        { choice: "Información sobre la estructura interna del programa.", radioValue: "q3-d", selected: false },
       ],
     },
   ];
@@ -57,7 +46,7 @@ export const ConsultasCuestionarioComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-c", "q2-c", "q3-d", "q4-c"];
+  const answers = ["q1-c", "q2-c", "q3-c"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

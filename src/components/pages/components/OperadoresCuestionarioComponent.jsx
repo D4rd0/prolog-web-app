@@ -6,15 +6,15 @@ export const ListasCuestionarioComponent = () => {
       questionText: "¿Cuál es la función principal de los operadores aritméticos en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Realizar operaciones lógicas entre términos.", radioValue: "q1-a", selected: false },
-        { choice: "b) Realizar operaciones aritméticas entre términos.", radioValue: "q1-b", selected: false },
+        { choice: "Realizar operaciones lógicas entre términos.", radioValue: "q1-a", selected: false },
+        { choice: "Realizar operaciones aritméticas entre términos.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Realizar operaciones entre listas.",
+          choice: "Realizar operaciones entre listas.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Establecer relaciones de orden entre términos.",
+          choice: "Establecer relaciones de orden entre términos.",
           radioValue: "q1-d",
           selected: false,
         },
@@ -24,10 +24,10 @@ export const ListasCuestionarioComponent = () => {
       questionText: "¿Cuál de los siguientes operadores se utiliza para calcular el resto de la división en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) /", radioValue: "q2-a", selected: false },
-        { choice: "b) //", radioValue: "q2-b", selected: false },
-        { choice: "c) mod", radioValue: "q2-c", selected: false },
-        { choice: "d) %", radioValue: "q2-d", selected: false },
+        { choice: "/", radioValue: "q2-a", selected: false },
+        { choice: "//", radioValue: "q2-b", selected: false },
+        { choice: "mod", radioValue: "q2-c", selected: false },
+        { choice: "%", radioValue: "q2-d", selected: false },
       ],
     },
     {
@@ -35,20 +35,10 @@ export const ListasCuestionarioComponent = () => {
         "¿Cuál es la función principal de los operadores relacionales en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) Realizar operaciones aritméticas entre términos.", radioValue: "q3-a", selected: false },
-        { choice: "b) Verificar la igualdad o desigualdad entre términos.", radioValue: "q3-b", selected: false },
-        { choice: "c) Manipular listas de datos.", radioValue: "q3-c", selected: false },
-        { choice: "d) Realizar operaciones de entrada/salida.", radioValue: "q3-d", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Qué hace el operador de corte (!) en Prolog?",
-      name: "q4-name",
-      options: [
-        { choice: "a) Agrega hechos a la base de conocimiento.", radioValue: "q4-a", selected: false },
-        { choice: "b) Elimina un hecho de la base de conocimiento.", radioValue: "q4-b", selected: false },
-        { choice: "c) Controla el backtracking durante la ejecución.", radioValue: "q4-c", selected: false },
-        { choice: "d) Recopila todas las soluciones válidas de una consulta en una lista.", radioValue: "q4-d", selected: false },
+        { choice: "Realizar operaciones aritméticas entre términos.", radioValue: "q3-a", selected: false },
+        { choice: "Verificar la igualdad o desigualdad entre términos.", radioValue: "q3-b", selected: false },
+        { choice: "Manipular listas de datos.", radioValue: "q3-c", selected: false },
+        { choice: "Realizar operaciones de entrada/salida.", radioValue: "q3-d", selected: false },
       ],
     },
   ];
@@ -57,7 +47,7 @@ export const ListasCuestionarioComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-b", "q2-c", "q3-b", "q4-c"];
+  const answers = ["q1-b", "q2-c", "q3-b"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

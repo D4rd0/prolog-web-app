@@ -6,49 +6,39 @@ export const ReglasCuestionarioComponent = () => {
           questionText: "¿Cuál es la sintaxis de una regla en Prolog?",
           name: "q1-name",
           options: [
-            { choice: "a) h ?- q1, q2, …, qn", radioValue: "q1-a", selected: false },
-            { choice: "b) h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
+            { choice: "h ?- q1, q2, …, qn", radioValue: "q1-a", selected: false },
+            { choice: "h :- q1, q2, …, qn", radioValue: "q1-b", selected: false },
             {
-              choice: "c) h | q1, q2, …, qn",
+              choice: "h | q1, q2, …, qn",
               radioValue: "q1-c",
               selected: false,
             },
             {
-              choice: "d) h :: q1, q2, …, qn",
+              choice: "h :: q1, q2, …, qn",
               radioValue: "q1-d",
               selected: false,
             },
           ],
         },
         {
-          questionText: "Indica cuál de los siguientes predicados podría utilizarse para calcular la media aritmética de dos números:",
-          name: "q2-name",
-          options: [
-            { choice: "a) media(X,Y):- (X + Y) / 2.", radioValue: "q2-a", selected: false },
-            { choice: "b) media(X,Y,Z):- Z is (X + Y) / 2.", radioValue: "q2-b", selected: false },
-            { choice: "c) media(X,Y,Z):- Z = (X + Y) / 2.", radioValue: "q2-c", selected: false },
-            { choice: "d) media(X,Y) = Y is (X + Y) / 2.", radioValue: "q2-d", selected: false },
-          ],
-        },
-        {
           questionText:
             "¿Cuál es el propósito principal de las reglas en Prolog?",
-          name: "q3-name",
+          name: "q2-name",
           options: [
-            { choice: "a) Representar información básica verdadera en el programa.", radioValue: "q3-a", selected: false },
-            { choice: "b) Establecer relaciones entre diferentes listas mediante condiciones.", radioValue: "q3-b", selected: false },
-            { choice: "c) Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q3-c", selected: false },
-            { choice: "d) Resolver consultas complejas mediante inferencias lógicas.", radioValue: "q3-d", selected: false },
+            { choice: "Representar información básica verdadera en el programa.", radioValue: "q2-a", selected: false },
+            { choice: "Establecer relaciones entre diferentes listas mediante condiciones.", radioValue: "q2-b", selected: false },
+            { choice: "Derivar nuevas afirmaciones a partir de la información existente en la base de conocimiento.", radioValue: "q2-c", selected: false },
+            { choice: "Resolver consultas complejas mediante inferencias lógicas.", radioValue: "q2-d", selected: false },
           ],
         },
         {
           questionText: "¿Qué tipo de regla se llama recursiva en Prolog?",
-          name: "q4-name",
+          name: "q3-name",
           options: [
-            { choice: "a) Aquella que no tiene cuerpo.", radioValue: "q4-a", selected: false },
-            { choice: "b) Aquella que contiene solo variables.", radioValue: "q4-b", selected: false },
-            { choice: "c) Aquella que se llama a sí misma, ya sea directa o indirectamente.", radioValue: "q4-c", selected: false },
-            { choice: "d) Aquella que establece una relación entre diferentes predicados.", radioValue: "q4-d", selected: false },
+            { choice: "Aquella que no tiene cuerpo.", radioValue: "q3-a", selected: false },
+            { choice: "Aquella que contiene solo variables.", radioValue: "q3-b", selected: false },
+            { choice: "Aquella que se llama a sí misma, ya sea directa o indirectamente.", radioValue: "q3-c", selected: false },
+            { choice: "Aquella que establece una relación entre diferentes predicados.", radioValue: "q3-d", selected: false },
           ],
         },
       ];
@@ -57,7 +47,7 @@ export const ReglasCuestionarioComponent = () => {
       const [total, setTotal] = useState(0);
       const [submitted, setSubmitted] = useState(false);
     
-      const answers = ["q1-b", "q2-b", "q3-c", "q4-c"];
+      const answers = ["q1-b", "q2-c", "q3-c"];
     
       const handleChange = ({ target }) => {
         const nextState = questions.map((question) => {

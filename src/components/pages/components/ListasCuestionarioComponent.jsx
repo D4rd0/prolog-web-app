@@ -6,15 +6,15 @@ export const ListasCuestionarioComponent = () => {
       questionText: "¿Cómo se representa una lista en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Como una secuencia de elementos separados por punto y coma.", radioValue: "q1-a", selected: false },
-        { choice: "b) Como una secuencia de elementos separados por comas y encerrados entre corchetes.", radioValue: "q1-b", selected: false },
+        { choice: "Como una secuencia de elementos separados por punto y coma.", radioValue: "q1-a", selected: false },
+        { choice: "Como una secuencia de elementos separados por comas y encerrados entre corchetes.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Como una secuencia de elementos separados por espacios y encerrados entre paréntesis.",
+          choice: "Como una secuencia de elementos separados por espacios y encerrados entre paréntesis.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Como una secuencia de elementos separados por barras verticales y encerrados entre paréntesis.",
+          choice: "Como una secuencia de elementos separados por barras verticales y encerrados entre paréntesis.",
           radioValue: "q1-d",
           selected: false,
         },
@@ -24,10 +24,10 @@ export const ListasCuestionarioComponent = () => {
       questionText: "¿Cómo se define la cabeza de una lista en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) Es el último elemento de la lista.", radioValue: "q2-a", selected: false },
-        { choice: "b) Es el primer elemento de la lista.", radioValue: "q2-b", selected: false },
-        { choice: "c) Es una variable que representa la lista entera.", radioValue: "q2-c", selected: false },
-        { choice: "d) Es el elemento que separa la lista en dos partes.", radioValue: "q2-d", selected: false },
+        { choice: "Es el último elemento de la lista.", radioValue: "q2-a", selected: false },
+        { choice: "Es el primer elemento de la lista.", radioValue: "q2-b", selected: false },
+        { choice: "Es una variable que representa la lista entera.", radioValue: "q2-c", selected: false },
+        { choice: "Es el elemento que separa la lista en dos partes.", radioValue: "q2-d", selected: false },
       ],
     },
     {
@@ -35,20 +35,10 @@ export const ListasCuestionarioComponent = () => {
         "¿Qué tipo de elementos pueden contener las listas en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) Solo números enteros.", radioValue: "q3-a", selected: false },
-        { choice: "b) Solo átomos y variables.", radioValue: "q3-b", selected: false },
-        { choice: "c) Cualquier término válido en Prolog, incluyendo átomos, números, variables, otras listas y estructuras complejas.", radioValue: "q3-c", selected: false },
-        { choice: "d) Solo átomos y otras listas.", radioValue: "q3-d", selected: false },
-      ],
-    },
-    {
-      questionText: "¿Cuál es una aplicación común de las listas en Prolog?",
-      name: "q4-name",
-      options: [
-        { choice: "a) Realizar operaciones aritméticas complejas.", radioValue: "q4-a", selected: false },
-        { choice: "b) Representar estructuras de datos complejas.", radioValue: "q4-b", selected: false },
-        { choice: "c) Controlar el flujo de ejecución del programa.", radioValue: "q4-c", selected: false },
-        { choice: "d) Manipular archivos de texto.", radioValue: "q4-d", selected: false },
+        { choice: "Solo números enteros.", radioValue: "q3-a", selected: false },
+        { choice: "Solo átomos y variables.", radioValue: "q3-b", selected: false },
+        { choice: "Cualquier término válido en Prolog, incluyendo átomos, números, variables, otras listas y estructuras complejas.", radioValue: "q3-c", selected: false },
+        { choice: "Solo átomos y otras listas.", radioValue: "q3-d", selected: false },
       ],
     },
   ];

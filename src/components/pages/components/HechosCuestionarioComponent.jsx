@@ -6,15 +6,15 @@ export const HechosCuestionarioComponent = () => {
       questionText: "¿Cuál es la definición de un hecho en Prolog según la descripción dada?",
       name: "q1-name",
       options: [
-        { choice: "a) Una negación de un término.", radioValue: "q1-a", selected: false },
-        { choice: "b) Una consulta que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
+        { choice: "Una negación de un término.", radioValue: "q1-a", selected: false },
+        { choice: "Una consulta que puede ser verdadera o falsa.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Una declaración que establece una relación verdadera sin condiciones adicionales.",
+          choice: "Una declaración que establece una relación verdadera sin condiciones adicionales.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Una regla que establece una relación entre dos elementos.",
+          choice: "Una regla que establece una relación entre dos elementos.",
           radioValue: "q1-d",
           selected: false,
         },
@@ -24,10 +24,10 @@ export const HechosCuestionarioComponent = () => {
       questionText: "¿Cuál es la sintaxis de un hecho en Prolog?",
       name: "q2-name",
       options: [
-        { choice: "a) {t1, t2, …, tn}.", radioValue: "q2-a", selected: false },
-        { choice: "b) b) [t1, t2, …, tn].", radioValue: "q2-b", selected: false },
-        { choice: "c) predicado(t1, t2, …, tn).", radioValue: "q2-c", selected: false },
-        { choice: "d) predicado(t1, t2, …, tn) :- condición.", radioValue: "q2-d", selected: false },
+        { choice: "{t1, t2, …, tn}.", radioValue: "q2-a", selected: false },
+        { choice: "[t1, t2, …, tn].", radioValue: "q2-b", selected: false },
+        { choice: "predicado(t1, t2, …, tn).", radioValue: "q2-c", selected: false },
+        { choice: "predicado(t1, t2, …, tn) :- condición.", radioValue: "q2-d", selected: false },
       ],
     },
     {
@@ -35,20 +35,20 @@ export const HechosCuestionarioComponent = () => {
         "¿Cuál es el propósito principal de los hechos en Prolog?",
       name: "q3-name",
       options: [
-        { choice: "a) Definir sublistas de listas de objetos.", radioValue: "q3-a", selected: false },
-        { choice: "b) Establecer condiciones adicionales para las consultas.", radioValue: "q3-b", selected: false },
-        { choice: "c) Representar información básica verdadera en el programa.", radioValue: "q3-c", selected: false },
-        { choice: "d) Resolver problemas específicos mediante inferencias complejas.", radioValue: "q3-d", selected: false },
+        { choice: "Definir sublistas de listas de objetos.", radioValue: "q3-a", selected: false },
+        { choice: "Establecer condiciones adicionales para las consultas.", radioValue: "q3-b", selected: false },
+        { choice: "Representar información básica verdadera en el programa.", radioValue: "q3-c", selected: false },
+        { choice: "Resolver problemas específicos mediante inferencias complejas.", radioValue: "q3-d", selected: false },
       ],
     },
     {
       questionText: "¿Qué tipo de información pueden representar los hechos en Prolog?",
       name: "q4-name",
       options: [
-        { choice: "a) Listas de objetos.", radioValue: "q4-a", selected: false },
-        { choice: "b) Operadores de listas.", radioValue: "q4-b", selected: false },
-        { choice: "c) Tanto propiedades como relaciones.", radioValue: "q4-c", selected: false },
-        { choice: "d) Únicamente consultas complejas.", radioValue: "q4-d", selected: false },
+        { choice: "Listas de objetos.", radioValue: "q4-a", selected: false },
+        { choice: "Operadores de listas.", radioValue: "q4-b", selected: false },
+        { choice: "Tanto propiedades como relaciones.", radioValue: "q4-c", selected: false },
+        { choice: "Únicamente consultas complejas.", radioValue: "q4-d", selected: false },
       ],
     },
   ];

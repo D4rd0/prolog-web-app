@@ -21,7 +21,7 @@ export const ConsultasComponent = () => {
       </h1>
       <p>En Prolog, una consulta es una cl&aacute;usula que se utiliza para hacer preguntas a la base de conocimiento definida en el programa. La sintaxis de una consulta es similar a la de una cl&aacute;usula sin cabeza, pero se utiliza un s&iacute;mbolo de interrogaci&oacute;n seguido de un guion en lugar de &lsquo;:-&rsquo;. Por ejemplo:</p>
       <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ?- gusta(juan, libro).</strong></p>
-      <p>En esta consulta, se est&aacute; preguntando si es cierto que a Juan le gusta un libro. El sistema Prolog buscar&aacute; en la base de conocimiento y responder&aacute; con "true" o "false", o bien con los valores correspondientes si hubiera variables en la consulta empleando para ello un mecanismo de inferencia.</p>
+      <p>En esta consulta, se est&aacute; preguntando si es cierto que a Juan le gusta libro. El sistema Prolog buscar&aacute; en la base de conocimiento y responder&aacute; con "true" o "false", o bien con los valores correspondientes si hubiera variables en la consulta empleando para ello un mecanismo de inferencia.</p>
       
       <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
 

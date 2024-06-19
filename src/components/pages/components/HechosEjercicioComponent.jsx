@@ -9,7 +9,7 @@ export const HechosEjercicioComponent = () => {
         firstInputBox.current.innerText = '';
         firstInputBox.current.classList.remove('correct');
     } else {
-        firstInputBox.current.innerText = 'pescar';
+        firstInputBox.current.innerText = 'Legusta(pepe,cantar).';
         firstInputBox.current.classList.add('correct');
     }
     setShowingAnswer(!showingAnswer);
@@ -18,7 +18,7 @@ export const HechosEjercicioComponent = () => {
   const submitAnswer = () => {
       const firstBox = firstInputBox.current.innerText.trim();
 
-      if (firstBox === 'pescar') {
+      if (firstBox === 'Legusta(pepe,cantar).') {
           alert('Correcto');
           window.isCorrectHechosEjercicio = 2; 
       } else {
@@ -32,7 +32,7 @@ export const HechosEjercicioComponent = () => {
             <h1>Ejercicio</h1>
             <p>Dado el siguiente programa:</p>
             <div>
-              <span>legusta(pepe,cantar).</span>
+              <span>Legusta(pepe,cantar).</span>
             </div>
             <div>
               <span>legusta(maria,bailar).</span>
@@ -40,7 +40,7 @@ export const HechosEjercicioComponent = () => {
             <div>
               <span>legusta(ana,pescar).</span>
             </div>
-            <p>¿Qué es lo que le gusta a ana?</p>
+            <p>¿Qué hecho del programa anterior no es sintácticamente correcto?</p>
             <div>
                 <span className="input-box" contentEditable="true" ref={firstInputBox}></span>
             </div>

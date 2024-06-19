@@ -7,15 +7,15 @@ export const TerminosCuestionarioComponent = () => {
       questionText: "¿Cuál es la principal diferencia entre Prolog y lenguajes de programación convencionales como C++ o Java?",
       name: "q1-name",
       options: [
-        { choice: "a) Prolog sigue un paradigma lógico-declarativo.", radioValue: "q1-a", selected: false },
-        { choice: "b) Prolog es un lenguaje compilado.", radioValue: "q1-b", selected: false },
+        { choice: "Prolog sigue un paradigma declarativo.", radioValue: "q1-a", selected: false },
+        { choice: "Prolog es un lenguaje compilado.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Prolog es exclusivamente para cálculos numéricos.",
+          choice: "Prolog es exclusivamente para cálculos numéricos.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Prolog utiliza bucles y condicionales.",
+          choice: "Prolog utiliza bucles y condicionales.",
           radioValue: "q1-d",
           selected: false,
         },
@@ -25,10 +25,10 @@ export const TerminosCuestionarioComponent = () => {
       questionText: "¿Qué aspecto singular destaca en la capacidad de Prolog para resolver problemas?",
       name: "q2-name",
       options: [
-        { choice: "a) Utiliza bucles y condicionales.", radioValue: "q2-a", selected: false },
-        { choice: "b) Está basado en la programación imperativa.", radioValue: "q2-b", selected: false },
-        { choice: "c) Su capacidad para resolver problemas a través de la lógica y la inferencia.", radioValue: "q2-c", selected: false },
-        { choice: "d) Provee un alto rendimiento en cálculos numéricos.", radioValue: "q2-d", selected: false },
+        { choice: "Utiliza bucles y condicionales.", radioValue: "q2-a", selected: false },
+        { choice: "Está basado en la programación imperativa.", radioValue: "q2-b", selected: false },
+        { choice: "Su capacidad para resolver problemas a través de la lógica y la inferencia.", radioValue: "q2-c", selected: false },
+        { choice: "Provee un alto rendimiento en cálculos numéricos.", radioValue: "q2-d", selected: false },
       ],
     },
     {
@@ -36,20 +36,20 @@ export const TerminosCuestionarioComponent = () => {
         "Describe brevemente cómo funciona el proceso de inferencia en Prolog cuando se realiza una consulta.",
       name: "q3-name",
       options: [
-        { choice: "a) Prolog busca en una base de datos SQL.", radioValue: "q3-a", selected: false },
-        { choice: "b) Prolog utiliza algoritmos de aprendizaje automático.", radioValue: "q3-b", selected: false },
-        { choice: "c)  Prolog busca en la base de conocimiento de hechos y reglas para encontrar soluciones.", radioValue: "q3-c", selected: false },
-        { choice: "d) Prolog utiliza la programación orientada a objetos.", radioValue: "q3-d", selected: false },
+        { choice: "Prolog busca en una base de datos SQL.", radioValue: "q3-a", selected: false },
+        { choice: "Prolog utiliza algoritmos de aprendizaje automático.", radioValue: "q3-b", selected: false },
+        { choice: "Prolog busca en la base de conocimiento de hechos y reglas para encontrar soluciones.", radioValue: "q3-c", selected: false },
+        { choice: "Prolog utiliza la programación orientada a objetos.", radioValue: "q3-d", selected: false },
       ],
     },
     {
       questionText: "¿Qué es un predicado en Prolog y cómo se define?",
       name: "q4-name",
       options: [
-        { choice: "a) Una variable sin valor asignado.", radioValue: "q4-a", selected: false },
-        { choice: "b) Un método de programación funcional.", radioValue: "q4-b", selected: false },
-        { choice: "c) Un conjunto de cláusulas con el mismo nombre en el átomo de la cabeza.", radioValue: "q4-c", selected: false },
-        { choice: "d) Un conjunto de números enteros.", radioValue: "q4-d", selected: false },
+        { choice: "Una variable sin valor asignado.", radioValue: "q4-a", selected: false },
+        { choice: "Un método de programación funcional.", radioValue: "q4-b", selected: false },
+        { choice: "Un conjunto de cláusulas con el mismo nombre en el átomo de la cabeza.", radioValue: "q4-c", selected: false },
+        { choice: "Un conjunto de números enteros.", radioValue: "q4-d", selected: false },
       ],
     },
   ];

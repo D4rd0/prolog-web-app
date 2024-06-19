@@ -7,48 +7,38 @@ export const TerminosCuestionarioComponent = () => {
       questionText: "¿Cuál de las siguientes opciones describe mejor un átomo en Prolog?",
       name: "q1-name",
       options: [
-        { choice: "a) Una estructura compuesta.", radioValue: "q1-a", selected: false },
-        { choice: "b) Un conjunto de números enteros.", radioValue: "q1-b", selected: false },
+        { choice: "Una estructura compuesta.", radioValue: "q1-a", selected: false },
+        { choice: "Un conjunto de números enteros.", radioValue: "q1-b", selected: false },
         {
-          choice: "c) Un término que representa un nombre simbólico o constante.",
+          choice: "Un término que representa un nombre simbólico o constante.",
           radioValue: "q1-c",
           selected: false,
         },
         {
-          choice: "d) Una expresión que puede ser verdadera o falsa.",
+          choice: "Una expresión que puede ser verdadera o falsa.",
           radioValue: "q1-d",
           selected: false,
         },
       ],
     },
     {
-      questionText: "¿Qué es un literal en Prolog según la descripción dada?",
-      name: "q2-name",
-      options: [
-        { choice: "a) Una expresión atómica o compuesta que siempre es verdadera.", radioValue: "q2-a", selected: false },
-        { choice: "b) Una estructura compuesta que contiene solo átomos.", radioValue: "q2-b", selected: false },
-        { choice: "c) Una variable que puede tomar cualquier valor.", radioValue: "q2-c", selected: false },
-        { choice: "d) Una expresión de una lista.", radioValue: "q2-d", selected: false },
-      ],
-    },
-    {
       questionText:
         "¿Cuál es la regla para nombrar variables en Prolog?",
-      name: "q3-name",
+      name: "q2-name",
       options: [
-        { choice: "a) Deben empezar con un número.", radioValue: "q3-a", selected: false },
-        { choice: "b) Deben empezar en minúscula.", radioValue: "q3-b", selected: false },
-        { choice: "c) Deben empezar en mayúscula o con ‘_’.", radioValue: "q3-c", selected: false },
-        { choice: "d) Deben empezar con un símbolo especial.", radioValue: "q3-d", selected: false },
+        { choice: "Deben empezar con un número.", radioValue: "q2-a", selected: false },
+        { choice: "Deben empezar en minúscula.", radioValue: "q2-b", selected: false },
+        { choice: "Deben empezar en mayúscula o con ‘_’.", radioValue: "q2-c", selected: false },
+        { choice: "Deben empezar con un símbolo especial.", radioValue: "q2-d", selected: false },
       ],
     },
     {
       questionText: "¿Cuál es la forma de definir una estructura en Prolog?",
-      name: "q4-name",
+      name: "q3-name",
       options: [
-        { choice: "a) átomo(t1, t2, ..., tn)", radioValue: "q4-a", selected: false },
-        { choice: "b) t1, t2, ..., tn(átomo)", radioValue: "q4-b", selected: false },
-        { choice: "c) [t1, t2, ..., tn]", radioValue: "q4-c", selected: false },
+        { choice: "átomo(t1, t2, ..., tn)", radioValue: "q3-a", selected: false },
+        { choice: "t1, t2, ..., tn(átomo)", radioValue: "q3-b", selected: false },
+        { choice: "[t1, t2, ..., tn]", radioValue: "q3-c", selected: false },
       ],
     },
   ];
@@ -57,7 +47,7 @@ export const TerminosCuestionarioComponent = () => {
   const [total, setTotal] = useState(0);
   const [submitted, setSubmitted] = useState(false);
 
-  const answers = ["q1-c", "q2-d", "q3-c", "q4-a"];
+  const answers = ["q1-c", "q2-c", "q3-a"];
 
   const handleChange = ({ target }) => {
     const nextState = questions.map((question) => {

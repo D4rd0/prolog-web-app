@@ -118,14 +118,14 @@ export const NavBarComponents = () => {
             page="Cláusulas"
           />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/clausulas_ejercicio"
             filter={checks.clausulas}
             page="Ejercicio"
             color={window.isCorrectClausulasEjercicio === 1 ? 'grey' : window.isCorrectClausulasEjercicio === 2 ? 'green' : window.isCorrectClausulasEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/clausulas_cuestionario"
@@ -179,14 +179,14 @@ export const NavBarComponents = () => {
             page="Consultas"
           />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/consultas_ejercicio"
             filter={checks.consultas}
             page="Ejercicio"
             color={window.isCorrectConsultasEjercicio === 1 ? 'grey' : window.isCorrectConsultasEjercicio === 2 ? 'green' : window.isCorrectConsultasEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/consultas_cuestionario"
@@ -198,14 +198,14 @@ export const NavBarComponents = () => {
         <li>
           <ReusableNavLink url="/negacion" filter={checks.negacion} page="Negación" />
         </li>
-        <li className="subcategory">
+        {/* <li className="subcategory">
           <ReusableNavLink
             url="/negacion_ejercicio"
             filter={checks.negacion}
             page="Ejercicio"
             color={window.isCorrectNegacionEjercicio === 1 ? 'grey' : window.isCorrectNegacionEjercicio === 2 ? 'green' : window.isCorrectNegacionEjercicio === 3 ? 'red' : 'grey'}
           />
-        </li>
+        </li> */}
         <li className="subcategory">
           <ReusableNavLink
             url="/negacion_cuestionario"
